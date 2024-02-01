@@ -1,0 +1,365 @@
+
+li {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+#header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/mainvisual.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  /* margin: 20px 30px; */
+  position: relative;
+}
+
+.navigation {
+  width: 100%;
+  
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation ul li {
+  padding-right: 1rem;
+}
+
+.navigation ul li a {
+  color: #fff;
+  /* font-size: bold; */
+  transition: all 0.3s ease;
+  filter: drop-shadow(1px 1px 2px #121212);
+}
+
+.navigation ul li a:hover {
+  color: #e03131;
+}
+
+
+
+.mainlogo {
+  padding: 0 16px;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+
+#menu {
+  margin-top: 20px;
+}
+
+.section-img {
+  width: 100%;
+  background-image: url(../img/menu.jpg);
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-img h2 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 4.5rem;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+  position: absolute;
+  top: 30%;
+
+}
+
+.menu-content {
+  display: flex;
+  margin-top:  80px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+}
+
+.section-title {
+  font-size: 2.5rem;
+  display: inline-block;
+  border-bottom: solid 6px #e03131;
+  margin-bottom: 70px;
+}
+
+.coffee {
+  width: 50%;
+  padding: 0 45px;
+  text-align: center;
+  border-right: solid #121212 2px;
+}
+
+.menu-content dl {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+
+}
+
+.menu-content dl dt {
+  width: 87%;
+  border-bottom: 1px dotted;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.menu-content dd {
+  width: 13%;
+  text-align: right;
+  padding-top: 8px;
+}
+
+
+.food {
+  width: 50%;
+  padding: 0 45px;
+  text-align: center;
+}
+
+.food dl {
+  margin-bottom: 50px;
+}
+
+
+
+#about .section-img {
+  width: 100%;
+  background-image: url(../img/about.jpg);
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+#about {
+  margin-top: 80px;
+}
+
+#about ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+
+.about-coffee {
+  text-align: center;
+}
+
+#about a {
+  color: #121212;
+}
+
+
+#about li{
+  width: 46%;
+  line-height: 2;
+  text-align: left;
+  padding: 2%;
+}
+
+
+#about .about-read {
+  width: 160px;
+  height: 50px;
+  line-height: 3.5;
+  margin: 0 auto;
+  /* display: inline-block; */
+  color: #000;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+#about .about-read span {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+/*
+.about-read::before 右の赤線
+.about-read::after 下の赤線
+.about-read span::before 左の赤線
+.about-read span::after 上の赤線
+*/
+#about .about-read::before,
+#about .about-read::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+#about .about-read span::before,
+#about .about-read span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+#about .about-read::before,
+#about .about-read span::before {
+  width: 2px;
+  height: 50%;
+}
+#about .about-read::after,
+#about .about-read span::after {
+  width: 20%;
+  height: 2px;
+}
+/*
+ホバー時の縦の動作
+右の赤線と左の赤線の高さを100%にする
+*/
+#about .about-read:hover::before,
+#about .about-read span:hover::before {
+  height: 100%;
+}
+/*
+ホバー時の横の動作
+下の赤線と上の赤線の横幅を100%にする
+*/
+#about .about-read:hover::after,
+#about .about-read span:hover::after {
+  width: 100%;
+}
+
+#location {
+margin-top: 80px;
+
+}
+
+
+#location .section-img {
+  width: 100%;
+  background-image: url(../img/location.jpg);
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.location-ourstore {
+  text-align: center;
+  padding: 20px 30px;
+}
+
+
+
+.location-map iframe {
+  width: 100%;
+}
+
+.location-address {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.location-address p {
+  padding: 5px 0;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+.section-img h2 {
+  font-size: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    top: 26%;
+    margin-bottom: 40px;
+  }
+
+
+.section-img {
+  height: 94px;
+  background-attachment: scroll;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.menu-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  margin-top: 40px;
+}
+
+
+.coffee {
+  border-right: none;
+  width: 100%;
+  padding: 0;
+}
+
+
+.food {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0;
+}
+
+#about .section-img {
+  height: 94px;
+  background-attachment: scroll;
+}
+
+
+#location .section-img {
+  height: 94px;
+  background-attachment: scroll;
+}
+
+.about-text ul {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+}
+
+#about li {
+  width: 100%;
+}
+
+}
