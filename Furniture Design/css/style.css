@@ -1,0 +1,150 @@
+/* body {
+  max-width: 1360px;
+  margin: 0 auto;
+} */
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.title a {
+  width: 180px;
+  line-height: 1px;
+  display: block;
+}
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.title {
+  text-align: left;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  color: #fff;
+  padding: 36px 50px;
+  transition: all 0.5s;
+  z-index: 20;
+  opacity: 0;
+}
+
+.nav-menu a {
+  color: #fff;
+}
+
+.open #navi {
+  left: 0;
+  opacity: 1;
+}
+
+.hambarger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.hambarger span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.hambarger span:nth-child(1) {
+  top: 10px;
+}
+
+.hambarger span:nth-child(2) {
+  bottom: 10px;
+}
+
+.open .hambarger span {
+  background-color: #fff;
+}
+
+
+.open .hambarger span:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.open .hambarger span:nth-child(2) {
+  transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+
+
+.mask {
+  display: none;
+  transition: all 0.5s;
+}
+
+.open .mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#top {
+  padding-top: 80px;
+  padding-bottom: 160px;
+  
+}
+
+
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-list li {
+  width: 23%;
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.product-list li p {
+  font-size: 12px;
+  padding-top: 6px;
+}
+
+
+.viw-more {
+  text-align: center;
+}
+
