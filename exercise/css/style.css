@@ -1,0 +1,599 @@
+* {
+  /* outline: 2px solid blue; */
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  /* margin: 0 auto; */
+}
+
+.header-title {
+  width: 100%;
+  padding: 20px 0 0 30px;
+}
+
+.header-logo {
+  width: 180px;
+}
+
+.main-all {
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+}
+
+.mainvisual {
+  max-width: 476px;
+  width: 100%;
+  margin-left: 10%;
+  position: absolute;
+  /* left: 10%; */
+  top: 220px;
+  z-index: 10;
+
+}
+
+
+.mainvisual-title {
+  width: 100%;
+  font-size: 86px;
+  font-weight: lighter;
+  line-height: 1.5;
+  background: #fff;
+  display: inline;
+  /* テキストの後ろにだけ背景を惹く */
+  -webit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.mainvisual-span {
+  color: #EB51C2;
+}
+
+.mainvisual-shop {
+  font-size: 26.5px;
+  font-weight: bold;
+  background: #fff;
+  line-height: 1.5;
+  /* テキストの後ろにだけ背景を表示する */
+  -webit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.mainvisual-img {
+  text-align: right;
+}
+
+.mainvisual-img img {
+  width: 100%;
+  max-width: 1060px;
+  border-end-start-radius: 90px;
+} 
+
+.btn-common {
+  display: block;
+  width: 330px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(235, 81, 194);
+  border-radius: 90px;
+  font-size: 20px;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+
+.mainvisual-catch {
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+.mainvisual-catch-inner-1 {
+  font-size: 108px;
+  color: #EB51C2;
+
+}
+
+.mainvisual-catch-inner-2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.mainvisual-catch-inner-2-span {
+  color: #EB51C2;
+}
+
+
+.mainvisual-catch-inner-3 {
+  max-width: 705px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+#explain img {
+  max-width: 950px;
+  width: 100%;
+}
+
+
+.explain-1 {
+  width: 100%;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.explain-img-left {
+  width: 100%;
+}
+
+
+.explain-img-contain {
+  max-width: 555px;
+  width: 100%;
+  position: relative;
+  right: 50px;
+  top: 80px;
+  height: 468px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: black;
+  padding: 50px;
+  box-shadow: 5px 5px 4px #f3f3f3;
+  z-index: 20;
+}
+
+.explain-training-pink {
+  color: #EB51C2;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.explain-training-sub {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.explain-training-content {
+font-size: 15px;
+line-height: 30px;
+}
+
+.explain-2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.explain-2  .explain-img-contain {
+  position: relative;
+  left: 50px;
+  top: 80px;
+  height: 468px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: black;
+  padding: 50px;
+  box-shadow: 5px 5px 4px #f3f3f3;
+  z-index: 20;
+}
+
+.explain-img-right {
+
+}
+
+
+.explain-training-green {
+  color: #00B21B;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.explain-btn {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.explain-btn a {
+  display: inline-block;
+}
+
+/* ourtrainer */
+
+.ourtrainer-all {
+  background-color: #EB51C2;
+  padding: 20px 120px 50px;
+  margin-top: 50px;
+}
+
+.ourtrainer {
+  padding-bottom: 60px;
+}
+
+.ourtrainer-title-en {
+  color: #fff;
+  font-size: 64px;
+  font-weight: lighter;
+  padding-top: 96px;
+}
+
+.ourtrainer-title-ja {
+color: #fff;
+font-size: 20px;
+margin-top: 10px;
+}
+
+.ourtrainer-trainer {
+  text-align: center;
+}
+
+.ourtrainer-trainer ul {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+.trainer::after {
+  content: "";
+  display: block;
+  width: 150%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.trainer:hover, .staff:hover {
+  font-weight: bold;
+}
+
+.trainer:hover::after, .staff:hover::after {
+  height: 4px;
+}
+
+.staff::after {
+  /* content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10px; */
+}
+
+.trainer {
+  width: 33%;
+}
+
+.staff {
+  width: 33%;
+}
+
+.ourtrainer-img {
+  /* max-width: 1110px; */
+  margin: 0 auto;
+}
+.ourtrainer-img ul{
+  display: flex;
+  gap: 30px;
+}
+
+.ourtrainer-img ul li img {
+  /* height: 467px; */
+  width: 100%;
+}
+
+.trainer-1 {
+  
+}
+
+.trainer-2 {
+
+}
+
+.trainer-3 {
+
+}
+
+
+/* Studio */
+
+.studio-all {
+  background-color: #fff;
+  padding: 30px 120px;
+}
+
+.studio {
+  padding-bottom: 60px;
+}
+
+.studio-title-en {
+  color: black;
+  font-size: 64px;
+  font-weight: lighter;
+  padding-top: 96px;
+}
+
+.studio-title-ja {
+color: #EB51C2;
+font-size: 20px;
+margin-top: 10px;
+}
+
+.studio-img {
+
+  }
+
+.studio-img ul {
+  display: flex;
+}
+
+.studio-img-1 {
+
+}
+
+.studio-img-2 {
+
+}
+
+#studio img {
+  max-width: 1110px;
+  width: 100%;
+}
+
+/* PRICE */
+
+.price-all {
+  background-color: #EB51C2;
+  padding: 20px 120px 50px;
+  margin-top: 50px;
+}
+
+.price {
+  width: 100%;
+}
+
+.pricecontent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pricecontent ul {
+  max-width: 32%;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.price-course {
+  width: 100%;
+}
+
+.price-course-content {
+
+}
+
+.price-week {
+  font-size: 26px;
+  color: #EB51C2;
+  margin-bottom: 10px;
+}
+
+/* 文字がはみ出る */
+.price-price {
+  width: 100%;
+  font-size: 48px;
+  line-height: 150%;
+}
+
+.price-price-sub {
+  font-size: 16px;
+}
+
+.price-sub-2 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.price-sub-2-2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price-sub-3 {
+  font-size: 18px;
+}
+
+.price-sub-3-2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price-food {
+  font-size: 18px;
+}
+
+.price-sub-4 {
+  font-size: 18px;
+}
+
+.price-sub-4-2 {
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+ .price-sub-2, .price-sub-3, .price-sub-4 {
+  padding: 30px 10px 10px ;
+}
+
+ .price-price-sub::after, .price-sub-2-2::after, .price-sub-3-2::after {
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+  margin-top: 10px;
+}
+
+
+.price-recommend {
+  position: relative;
+  top: -40px;
+  z-index: 50;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid 1px #EB51C2;
+  color: #EB51C2;
+  background-color: #fff;
+  border-radius: 25px;
+  /* padding入れると全体下がってします */
+  padding: 5px 10px 10px;
+}
+
+.faq-all {
+  background-color: #fff;
+  padding: 30px 120px;
+
+}
+
+.faq-content {
+
+}
+
+.faq-question {
+  font-size: 15px;
+}
+
+.faq-question:before {
+  content: "Q";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  align-items: center;
+  background-color: #fff;
+  color: #EB51C2;
+}
+
+.faq-answer {
+  font-size: 15px;
+  /* display: none; */
+}
+
+.faq-answer:before {
+  content: "A";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  align-items: center;
+  background-color: #fff;
+  color: #EB51C2;
+}
+
+.faq-question::after {
+  content: "";
+  display: inline-block;
+  width: 8px; /* ボックスの横幅を指定する */
+  height: 8px; /* ボックスの高さを指定する */
+  border-top: 3px solid #EB51C2; /* 境界線の上部を実線に指定する*/
+  border-right: 3px solid #EB51C2;/* 境界線の上部を実線に指定する*/
+  /* align-items: center; */
+  vertical-align: middle;
+  transform: rotate(-225deg);
+  position: relative;
+  left: 5px;
+}
+
+.faq-answer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.faq-img {
+  background-color: #EB51C2;
+}
+
+.faq-img-content img{
+  width: 100%;
+}
+
+.faq-img-come {
+  padding-bottom: 40px;
+}
+
+.faq-img-come-content {
+  font-size: 64px;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.faq-img-come > .btn-common {
+  background-color: #fff;
+  color: #EB51C2;
+  margin: 0 auto;
+} 
+
+/* footer */
+
+.footer-title {
+  background-color: black;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-title p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 250px;
+  bottom: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  /* １番最後に付けないと機能しない？ */
+  background-color: #fff;
+}
+
+.pagetop-arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 4px solid #EB51C2;
+  border-right: 4px solid #EB51C2;
+  transform: translateY(20%) rotate(-45deg);
+}
+
+
+html {
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  max-width: 1440px;
+}
