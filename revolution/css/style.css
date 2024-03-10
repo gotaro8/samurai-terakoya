@@ -16,9 +16,7 @@ img {
 }
 #header {
     background: transparent;
-    /* background:linear-gradient(120deg, #23002e, #1e092b, #320C65, #A01B7C, #C21780) */
     position: fixed;
-    /* position: absolute; */
     top: 0;
     left: 0;
     right: 0;
@@ -31,6 +29,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    padding: 10px;
 }
 
 .header-top {
@@ -50,10 +49,22 @@ img {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    margin-right: 22px;
 }
 
 .navigation ul {
-    gap: 20px;
+    gap: 26px;
+    text-align: center;
+}
+
+.navigation ul li:nth-child(2) {
+    position: relative;
+    left: 7px;
+}
+
+.navigation ul li:nth-child(3) {
+    position: relative;
+    left: 15px;
 }
 
 .navigation ul li a{
@@ -86,8 +97,6 @@ a {
     justify-content: space-between;
     height: 700px;
     margin: 0 auto;
-
-    
 }
 
 
@@ -96,16 +105,18 @@ a {
     width: 100%;
     background-image: url(../img/top.png);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: right bottom;
     padding: 100px;
     padding-top: 160px;
-
+    letter-spacing: 1px;
 }
 
 .content-title {
     color: rgb(209, 54, 209);
     font-size: 24px;
     font-weight: bold;
+    position: relative;
+    bottom: 8px;
 }
 
 .contet-title-span {
@@ -118,28 +129,44 @@ a {
     font-size: 96px;
     font-weight: bold;
     margin-top: 10px;
+    position: relative;
+    top: 5px;
 
 }
 
 .content-date {
     font-size: 36px;
     color: #fff;
+    font-weight: bold;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+.content-date::after {
+    content: url(../img/teiji-de-kaerumon.png);
+    vertical-align: top;
+    margin-left: 130px;
+    position: relative;
+    bottom: 7px;
 }
 
 .apply {
-    width: 300px;
-    margin-top: 20px;
+   max-width: 300px;
+   width: 100%;
+    margin-top: -35px;
 }
 
 .apply-button {
     width: 100%;
     display: block;
     color: #fff;
+    font-weight: bold;
     text-align: center;
     box-shadow: 0 10px  #DD118E;
     font-size: 18px;
     border-radius: 30px;
-    padding: 20px;
+    padding: 23px;
+    letter-spacing: 1px;
     background:linear-gradient(60deg, #C71B81, #664BBF)
 }
 
@@ -147,7 +174,7 @@ a {
 #about {
     /* section全体に色がつかないのはなぜか？ */
     background-color: black;
-    padding-top: 60px;
+    padding-top: 110px;
 }
 
 .about-all {
@@ -164,20 +191,12 @@ a {
     font-weight: bold;
     letter-spacing: 3px;
     text-align: center;
-    padding: 10px;
-    margin-bottom: 30px;
-
-}
-
-.title span {
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 1px;
 }
 
 .about-cotent {
     display: flex;
-    padding-bottom: 60px;
+    padding-top: 55px;
+    padding-left: 125px;
 }
 
 .about-img {
@@ -186,14 +205,9 @@ a {
     text-align: center;
 }
 
-.about-img > img {
-    /* height: 650px; */
-
-}
-
 .about-text {
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 90px;
+    padding-left: 70px;
 }
 
 .abou-text-teme {
@@ -206,14 +220,16 @@ a {
     color: #d136d1;
     font-size: 48px;
     font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 5px;
 }
 
 .about-teme-content {
     font-size: 18px;
     color: #fff;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     line-height: 175%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #about dl {
@@ -227,20 +243,22 @@ a {
 #about dt {
     font-size: 16px;
 
-    width: 15%;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    width: 13%;
+    margin-top: 14px;
+    /* padding-bottom: 10px; */
 }
 
 #about dl dd {
-    width: 85%;
+    width: 87%;
     font-size: 16px;
+    margin-top: 14px;
+    letter-spacing: 2px;
 }
 
 .apply-2 {
-    width: 230px;
-    /* height:76px; */
-    margin-top: 30px;
+   max-width: 230px;
+    margin-top: 27px;
+    letter-spacing: px;
 }
 
 #about .apply-2 a {
@@ -256,8 +274,10 @@ a {
     background:linear-gradient(60deg, #C71B81, #664BBF)
 }
 
+/* スピーカー */
+
 #speaker {
-    padding-top: 60px;
+    padding-top: 220px;
     background:linear-gradient(120deg, #23002e, #1e092b, #320C65, #A01B7C, #C21780)
 }
 
@@ -266,65 +286,81 @@ a {
    max-width: 1360px;
 }
 
-.tille {
-    /* max-width: 1360px; */
-}
 
 .title-en {
+    display: block;
     font-size: 60px;
     font-weight: bold;
     color: #D136D1;
+    padding-left: 18px;
 }
 
 .title-ja {
+    display: block;
     font-size: 20px;
     font-weight: bold;
     color: #fff;
+    padding-top: 10px;
+    padding-left: 20px;
+    letter-spacing: 1px;
 }
 
+.person {
+    padding-top: 65px;
+}
 .en {
     color: #d136d1;
     font-size: 42px;
-    margin-bottom: 25px;
+    margin-left: 10px;
+    letter-spacing: 2px;
 }
 
 .jp {
     color: #fff;
     font-size: 18px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
-
-
-
-.shawn, .jecica {
+.shawn {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     padding-bottom: 60px;
-    margin: 0 50px;
+    margin: 0 120px;
+    margin-right: 110px;
     
 }
 
 .mihoko {
     display: flex;
-    padding-bottom: 60px;
-    margin: 0 50px;
+    margin-left: 130px;
+    margin-top: 15px;
+    justify-content: space-between;
 }
+
+.mihoko .profile {
+    margin-right: 40px;
+    padding-right: 60px;
+}
+
+.jecica {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    margin: 45px 120px 0;
+    margin-right: 110px;
+     }
 
 .person-img {
     width: 100%;
     max-width: 445px;
-    text-align: center;
-}
-
-.person-img img {
-    /* width: 100%; */
-    /* height: 100%; */
-
 }
 
 .profile {
-    width: 100%;
-    margin: 0 30px;
+    width: 56%;
+    letter-spacing: 1px;
 }
 
 
@@ -332,14 +368,15 @@ a {
 .preson-text {
     color: #fff;
     font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 200%;
+    margin-left: 10px;
+    margin-top: 40px;
+    letter-spacing: 0.8px;
+    line-height: 180%;
 }
 
 #session {
     background-color: black;
-    padding-bottom: 100px;
-
+    padding: 100px;
 }
 
 .session {
@@ -348,19 +385,25 @@ a {
     padding-top: 60px;
 }
 
+dl {
+    margin-top: 75px;
+
+}
+
 .dl {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     border-bottom: 1px solid #d136d1;
     padding-bottom: 30px;
-    padding-top: 20px;
-    margin: 0 auto;
+    padding-top: 30px;
+    margin-left: 64px;
 }
 
 
 #session .add {
-    margin-left: 30%;
+    margin-left: 20%;
+    margin-top: 10px;
     color: #fff;
     font-weight: normal;
     font-size: 15px;
@@ -369,7 +412,7 @@ a {
 
 
 #session dt {
-    width: 30%;
+    width: 20%;
     font-size: 22px;
     font-weight: bold;
     text-align: left;
@@ -379,7 +422,7 @@ a {
 
 
 #session dd {
-    width: 70%;
+    width: 80%;
     color: #d136d1;
     font-weight: bold;
     font-size: 22px;
@@ -443,7 +486,6 @@ a {
 .text-1 input {
     width: 50%;
     border-radius: 5px;
-    /* font-size: 16px; */
 }
 
 form input,
@@ -451,10 +493,6 @@ form textarea {
     font-size: 16px;
     padding: 6px;
     /* 高さをheigthで指定するのはよくない */
-}
-
-input[type="text"] {
-    /* padding: 6px; */
 }
 
 .text-1 select {
@@ -487,20 +525,14 @@ input[type="text"] {
 .apply-3 {
     display: block;
     box-shadow: 0 9px #d136d1;
-    /* font-size: 0.5rem; */
-    /* padding: 6px 10px; */
     margin: 0 auto;
-    /* margin-top: 30px; */
     border-radius: 35px;
-    /* width: 300px; */
     max-width: 300px;
-    /* height: 30px; */
     background:linear-gradient(60deg, #C71B81, #664BBF)
 }
 .apply-3 a {
     color: #fff;
     line-height: 20px;
-    /* font-size: 0.525rem; */
     font-size: 18px;
     padding: 24px;
     display: block;
@@ -598,6 +630,7 @@ html {
 
     .about-img {
         padding: 20px;
+        margin: 0 auto;
     }
 
     .about-text {
@@ -631,11 +664,17 @@ html {
         text-align: center;
         margin: 0 auto;
     }
-    
+
+    .person {
+    }
+    .shawn {
+        margin-top: 100px;
+    }
+
+
     .shawn, .mihoko, .jecica {
         display: block;
         width: 100%;
-        margin: 0;
     }
 
     .person-img {
@@ -664,25 +703,11 @@ html {
 
     }
     
-    .registor-inside form {
-        /* text-align: center; */
-    }
-
-
-    
-    #registor .registor-inside p {
-        /* text-align: center; */
-        /* text-align: left; */
-    }
     
     #registor .registor-inside p span {
         color: #d136d1;
         font-size: 16px;
         padding-left: 5px;
-    }
-    
-    .radio {
-        /* text-align: center; */
     }
     
     .text-1 {
@@ -706,7 +731,6 @@ html {
     }
     
     .text-1 select {
-        /* width: 40%; */
         border-radius: 5px;
         padding: 8px;
     }
