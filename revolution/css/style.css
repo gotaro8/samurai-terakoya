@@ -84,6 +84,7 @@ a {
 
 .nav {
     display: flex;
+    margin-right: 12px;
 }
 
 .mainvisual {
@@ -105,14 +106,15 @@ a {
     width: 100%;
     background-image: url(../img/top.png);
     background-repeat: no-repeat;
-    background-position: right bottom;
-    padding: 100px;
+    background-position: right 8% bottom;
+    padding: 40px;
     padding-top: 160px;
     letter-spacing: 1px;
 }
 
 .content-title {
     color: rgb(209, 54, 209);
+    margin-left: 56px;
     font-size: 24px;
     font-weight: bold;
     position: relative;
@@ -121,6 +123,7 @@ a {
 
 .contet-title-span {
     color: #fff;
+    padding-left: 5px;
 }
 
 .content-work {
@@ -128,7 +131,8 @@ a {
     color: #fff;
     font-size: 96px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 8px;
+    margin-left: 57px;
     position: relative;
     top: 5px;
 
@@ -139,13 +143,14 @@ a {
     color: #fff;
     font-weight: bold;
     margin-top: 25px;
+    margin-left: 57px;
     letter-spacing: 2px;
 }
 
 .content-date::after {
     content: url(../img/teiji-de-kaerumon.png);
     vertical-align: top;
-    margin-left: 130px;
+    margin-left: 133px;
     position: relative;
     bottom: 7px;
 }
@@ -154,6 +159,7 @@ a {
    max-width: 300px;
    width: 100%;
     margin-top: -35px;
+    margin-left: 57px;
 }
 
 .apply-button {
@@ -180,6 +186,7 @@ a {
 .about-all {
     margin: 0 auto;
     max-width: 1360px;
+    padding-bottom: 70px;
 
 }
 
@@ -195,25 +202,30 @@ a {
 
 .about-cotent {
     display: flex;
-    padding-top: 55px;
-    padding-left: 125px;
+    padding-top: 58px;
+    max-width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 
 .about-img {
-    width: 100%;
+    width: 50%;
     max-width: 445px;
     text-align: center;
 }
 
 .about-text {
-    margin-top: 90px;
-    padding-left: 70px;
+    width: 665px;
+    margin-top: 92px;
+    width: 70%;
 }
 
 .abou-text-teme {
     color: #fff;
     font-size: 24px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
+    margin-left: 70px;
 }
 
 .about-teme {
@@ -221,15 +233,18 @@ a {
     font-size: 48px;
     font-weight: bold;
     margin-top: 20px;
+    margin-left: 70px;
     letter-spacing: 5px;
 }
 
 .about-teme-content {
     font-size: 18px;
     color: #fff;
-    letter-spacing: 4px;
+    letter-spacing: 0.77px;
     line-height: 175%;
-    margin-top: 30px;
+    margin-top: 32px;
+    margin-right: 12px;
+    margin-left: 66px;
 }
 
 #about dl {
@@ -237,12 +252,12 @@ a {
     flex-wrap: wrap;
     width: 100%;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 18px;
+    margin-left: 70px;
 }
 
 #about dt {
     font-size: 16px;
-
     width: 13%;
     margin-top: 14px;
     /* padding-bottom: 10px; */
@@ -251,14 +266,15 @@ a {
 #about dl dd {
     width: 87%;
     font-size: 16px;
-    margin-top: 14px;
-    letter-spacing: 2px;
+    margin-top: 13px;
+    letter-spacing: 1.7px;
 }
 
 .apply-2 {
    max-width: 230px;
     margin-top: 27px;
     letter-spacing: px;
+    margin-left: 70px;
 }
 
 #about .apply-2 a {
@@ -277,13 +293,15 @@ a {
 /* スピーカー */
 
 #speaker {
-    padding-top: 220px;
+    padding-top: 150px;
     background:linear-gradient(120deg, #23002e, #1e092b, #320C65, #A01B7C, #C21780)
 }
 
 .speaker-all {
    margin: 0 auto;
    max-width: 1360px;
+   padding-bottom: 70px;
+
 }
 
 
@@ -292,7 +310,8 @@ a {
     font-size: 60px;
     font-weight: bold;
     color: #D136D1;
-    padding-left: 18px;
+    margin-left: 7px;
+    /* padding-left: 18px; */
 }
 
 .title-ja {
@@ -301,24 +320,25 @@ a {
     font-weight: bold;
     color: #fff;
     padding-top: 10px;
-    padding-left: 20px;
+    /* margin-left: 5px; */
+    margin: 0 auto;
     letter-spacing: 1px;
 }
 
 .person {
-    padding-top: 65px;
+    padding-top: 60px;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 .en {
     color: #d136d1;
     font-size: 42px;
-    margin-left: 10px;
     letter-spacing: 2px;
 }
 
 .jp {
     color: #fff;
     font-size: 18px;
-    margin-left: 10px;
     margin-top: 10px;
 }
 
@@ -326,31 +346,40 @@ a {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding-bottom: 60px;
-    margin: 0 120px;
-    margin-right: 110px;
+    max-width: 1110px;
     
 }
 
 .mihoko {
     display: flex;
-    margin-left: 130px;
-    margin-top: 15px;
-    justify-content: space-between;
+    margin-top: 74px;
 }
 
-.mihoko .profile {
-    margin-right: 40px;
-    padding-right: 60px;
+.mihoko-profile {
+    padding-left: 60px;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.mihoko-person-img {
+    max-width: 445px;
+    width: 100%;
 }
 
 .jecica {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    padding-bottom: 60px;
-    margin: 45px 120px 0;
-    margin-right: 110px;
+    margin-top: 40px;
+     }
+
+     .jecica-jp {
+        margin-top: 18px;
+        color: #fff;
+        font-size: 18px;
+     }
+
+     .jecica-li {
+        padding-top: 3px;
      }
 
 .person-img {
@@ -359,7 +388,8 @@ a {
 }
 
 .profile {
-    width: 56%;
+    max-width: 665px;
+    width: 100%;
     letter-spacing: 1px;
 }
 
@@ -368,21 +398,22 @@ a {
 .preson-text {
     color: #fff;
     font-size: 16px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-top: 40px;
     letter-spacing: 0.8px;
     line-height: 180%;
 }
 
 #session {
-    background-color: black;
-    padding: 100px;
+    margin: 0 auto;
+    background-color: #333333;
+    padding-bottom: 101px;
 }
 
 .session {
     max-width: 1360px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 151px;
 }
 
 dl {
@@ -393,36 +424,80 @@ dl {
 .dl {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    max-width: 1110px;
+    width: 100%;
     border-bottom: 1px solid #d136d1;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    margin-left: 64px;
+    padding-top: 28px;
+    padding-bottom: 35px;
+    margin: 0 auto;
+}
+
+.dl-2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1110px;
+    width: 100%;
+    border-bottom: 1px solid #d136d1;
+    padding-top: 47px;
+    padding-bottom: 35px;
+    margin: 0 auto;
+}
+
+.dl-3 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1110px;
+    width: 100%;
+    border-bottom: 1px solid #d136d1;
+    padding-top: 47px;
+    padding-bottom: 35px;
+    margin: 0 auto;
+}
+
+.dl-4 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1110px;
+    width: 100%;
+    border-bottom: 1px solid #d136d1;
+    padding-top: 47px;
+    padding-bottom: 35px;
+    margin: 0 auto;
 }
 
 
+
+
 #session .add {
-    margin-left: 20%;
-    margin-top: 10px;
+    max-width: 790px;
+    margin-left: 21%;
+    margin-top: 13px;
     color: #fff;
     font-weight: normal;
     font-size: 15px;
-    line-height: 200%;
+    line-height: 160%;
+    letter-spacing: 0.7px;
 }
 
 
 #session dt {
-    width: 20%;
+    max-width: 145px;
+    width: 100%;
     font-size: 22px;
+    margin-left: 30px;
+    text-align: center;
     font-weight: bold;
-    text-align: left;
+    letter-spacing: 1px;
     color: #fff;
 }
 
 
 
 #session dd {
-    width: 80%;
+    max-width: 692px;
+    width: 100%;
+    margin-left: 59px;
+    letter-spacing: 1px;
     color: #d136d1;
     font-weight: bold;
     font-size: 22px;
@@ -437,7 +512,7 @@ dl {
 	  transparent 75%, #000107 75%, #000107 75%),
 	 linear-gradient(-135deg, #000107 25%, #000107 25%, transparent 25%,
 	  transparent 75%, #000107 75%, #000107 75%);
-      padding-top: 60px;
+      padding-top: 90px;
 }
 
 .registor-all {
@@ -447,79 +522,120 @@ dl {
 
 .registor {
     width: 100%;
-    padding: 20px 80px 60px 80px;
+    /* padding: 20px 80px 60px 80px; */
+    padding-top: 59px;
     text-align: center;
-    
+    padding-bottom: 118px;
 }
 
 .registor-inside {
     max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
     border: 4px solid #d136d1;
     background-color: #1A1A1A;
-    border-radius: 10px;
-    padding: 80px 120px;
+    border-radius: 25px;
+    /* padding: 80px 120px; */
 }
+
+.form {
+    margin-top: 92px;
+    margin-bottom: 88px;
+}
+
 
 #registor .registor-inside p {
     color: #fff;
     text-align: left;
     margin-bottom: 10px;
+    margin-left: 157px;
+    letter-spacing: 1px;
 }
 
 #registor .registor-inside p span {
     color: #d136d1;
     font-size: 16px;
     padding-left: 5px;
+    text-align: center;
 }
 
 .radio {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     color: #fff;
+    margin-left: 154px;
+
+}
+
+.input {
+    margin-left: 35.5px;
 }
 
 .text-1 {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 157px;
+}
+
+.text-2 {
+    margin-left: 157px;
+    text-align: left;
+    padding-bottom: 27px;
 }
 
 .text-1 input {
-    width: 50%;
+    max-width: 300px;
+    width: 100%;
     border-radius: 5px;
 }
 
 form input,
 form textarea {
     font-size: 16px;
-    padding: 6px;
+    padding: 8px;
     /* 高さをheigthで指定するのはよくない */
 }
 
-.text-1 select {
-    width: 50%;
-    border-radius: 5px;
+.text-4 select {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 7px;
     padding: 8px;
+    letter-spacing: 3px;
 }
 
-.text-2 {
-    text-align: left;
-    margin-bottom: 20px;
-}
 
 .text-2 input {
-    width: 40%;
+    max-width: 200px;
+    width: 100%;
     border-radius: 5px;
 }
 
 .text-3 {
     text-align: left;
-    margin-bottom: 20px;
+    margin-left: 157px;
+    margin-bottom: 35px;
+    letter-spacing: 
+}
+
+.text-4 {
+    text-align: left;
+    margin-bottom: 48px;
+    margin-left: 157px;
+    
 }
 
 .text-3 input {
-    width: 80%;
-    height: 130px;
+    max-width: 600px;
+    width: 100%;
+    height: 200px;
     border-radius: 5px;
+}
+
+.tell {
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
 }
 
 .apply-3 {
@@ -546,19 +662,20 @@ form textarea {
 .footer {
     color: #fff;
     text-align: center;
-    padding: 30px;
+    padding: 23px;
 }
 
 .footer p {
     padding: 50px;
+    letter-spacing: 1.3px;
 }
 
 .pagetop {
     height: 80px;
     width: 80px;
     position: fixed;
-    right: 30px;
-    bottom: 30px;
+    right: 114px;
+    bottom: 39px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -626,6 +743,7 @@ html {
 
     .about-cotent {
         display: block;
+
     }
 
     .about-img {
@@ -667,6 +785,7 @@ html {
 
     .person {
     }
+    
     .shawn {
         margin-top: 100px;
     }
@@ -730,7 +849,7 @@ html {
         padding: 6px;
     }
     
-    .text-1 select {
+    .text-4 select {
         border-radius: 5px;
         padding: 8px;
     }
