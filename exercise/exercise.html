@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/recet.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
   <title>EXERCISE</title>
 </head>
 <body>
@@ -76,6 +80,7 @@
       </section>
     </div>
 
+      <!-- トレーナー -->
     <section id="ourtrainer">
       <div class="ourtrainer-all">
         
@@ -92,15 +97,31 @@
       </div>
 
       <div class="ourtrainer-img">
-        <ul>
-          <li class="trainer-1"><img src="img/trainer01.png" alt=""></li>
-          <li class="trainer-2"><img src="img/trainer02.png" alt=""></li>
-          <li class="trainer-3"><img src="img/trainer03.png" alt=""></li>
+        <ul class="ourtrainer-img-trainer">
+          <li class="trainer-1"><img class="trainer-pic" src="img/trainer01.png" alt=""></li>
+          <li class="trainer-1"><img class="trainer-pic" src="img/trainer02.png" alt=""></li>
+          <li class="trainer-1"><img class="trainer-pic" src="img/trainer03.png" alt=""></li>
+        </ul>
+        <ul class="ourtrainer-img-staff">
+          <li class="staff-1"><img class="staff-pic" src="img/staff01.png" alt=""></li>
+          <li class="staff-1"><img class="staff-pic" src="img/staff02.png" alt=""></li>
+        </ul>
+      </div>
+      <div class="ourtrainer-img-explain">
+        <ul class="ourtrainer-img-trainer-ex">
+          <p class="trainer-ex">こんにちは！英語で楽しくトレーニングしましょう。日本語が話せますのでご安心ください。</p>
+          <p class="trainer-ex">Hello! 筋肉をつけすぎずしなやかな体を作ることが得意です！美しさを磨いていきましょう。</p>
+          <p class="trainer-ex">Hi, 負荷や強度の高いトレーニングがしたいならおまかせてください！どんなご要望もできるかぎり叶えますよ！</p>
         </ul>
       </div>
     </div>
+
+    
     </section>
 
+
+
+    <!-- スタジオ -->
     <section id="studio">
       <div class="studio-all">
         
@@ -110,10 +131,15 @@
       </div>
 
       <div class="studio-img">
-        <ul>
-          <li class="studio-img-1"><img src="img/studio01.png" alt=""></li>
-          <!-- <li class="studio-img-2"><img src="img/studio02.png" alt=""></li> -->
-        </ul>
+        <div class="carousel">
+          <img src="img/studio01.png" alt="" class="carouselImg">
+        </div>
+        <div class="carousel">
+          <img src="img/studio02.png" alt="" class="carouselImg">
+        </div>
+        <div class="carousel">
+          <img src="img/studio03.png" alt="" class="carouselImg">
+        </div>
       </div>
 
       </div>
@@ -130,7 +156,7 @@
         </div>
 
         <div class="pricecontent">
-          <ul>
+          <ul class="pricecontent-ul">
             <li class="price-course">
               <div class="price-course-content">
                 <p class="price-week">週１コース</p>
@@ -147,13 +173,13 @@
             </li>
           </ul>
           
-          <ul>
+          <ul >
             <li class="price-course">
               <div class="price-course-content">
                 <p class="price-recommend">オススメ！</p>
                 <p class="price-week">週2コース</p>
                 <p class="price-price">¥40,000</p>
-                  <p class="price-price-sub">（入会金 ¥10000</p>
+                <p class="price-price-sub">（入会金 ¥10000</p>
                 <p class="price-sub-2">レンタル</p>
                 <p class="price-sub-2-2">タオル、ウェア、プロテイン無料</p>
                 <p class="price-sub-3">レストラン</p>
@@ -165,7 +191,7 @@
             </li>
           </ul>
 
-          <ul>
+          <ul class="pricecontent-ul">
             <li class="price-course">
               <div class="price-course-content">
                 <p class="price-week">無制限</p>
@@ -181,8 +207,7 @@
               </div>
             </li>
           </ul>
-
-
+        </div>
         </div>
         </section>
 
@@ -195,16 +220,37 @@
           </div>
 
           <div class="faq-content">
-            <ul>
-              <li class="faq-question">見学や体験は可能ですか？</li>
-              <li class="faq-answer">無料カウンセリングの際に見学が可能です。フォームに見学・体験希望の欄がございますので内容をご確認しチェックを入れてください。</li>
-              <li class="faq-question">用意するものは何がありますか？</li>
-              <li class="faq-answer">55555555555</li>
-              <li class="faq-question">シャワールームはありますか？</li>
-              <li class="faq-answer">55555555555</li>
-            </ul>
+
+          <div class="faq-cover">
+            <div class="faq-close-1">
+              <p class="faq-question">見学や体験は可能ですか？</p>
+              <p class="faq-question-open-1"></p>
+            </div>
+            <div class="answer-close-1">
+              <p class="faq-answer-1">無料カウンセリングの際に見学が可能です。フォームに見学・体験希望の欄がございますので内容をご確認しチェックを入れてください。</p>
+            </div>
           </div>
 
+          <div class="faq-cover">
+            <div class="faq-close-2">
+              <p class="faq-question">用意するものは何がありますか？</p>
+              <p class="faq-question-open-2"></p>
+            </div>
+            <div class="answer-close-2">
+              <p class="faq-answer-2">55555555555</p>
+            </div>
+          </div>
+
+          <div class="faq-cover">
+            <div class="faq-close-3">
+              <p class="faq-question">シャワールームはありますか？</p>
+              <p class="faq-question-open-3"></p>
+            </div>
+            <div class="answer-close-3">
+              <p class="faq-answer-3">55555555555</p>
+            </div>
+          </div>
+          </div>
         </div>
 
     
@@ -223,12 +269,16 @@
           <footer id="footer" class="wrapper">
             <div class="footer-title">
               <p>ENGBODY</p>
+              <div class="pagetop"><a href="#" class="pagetop-arrow"></a></div>
             </div>
 
-            <div class="pagetop"><a href="#" class="pagetop-arrow"></a></div>
           </footer>
 
   </main>
   
+  <!-- slickの読み込み -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>

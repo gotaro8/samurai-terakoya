@@ -184,11 +184,6 @@ line-height: 30px;
   z-index: 20;
 }
 
-.explain-img-right {
-
-}
-
-
 .explain-training-green {
   color: #00B21B;
   font-size: 24px;
@@ -197,7 +192,7 @@ line-height: 30px;
 
 .explain-btn {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .explain-btn a {
@@ -213,6 +208,7 @@ line-height: 30px;
 }
 
 .ourtrainer {
+  max-width: 1110px;
   padding-bottom: 60px;
 }
 
@@ -230,25 +226,28 @@ margin-top: 10px;
 }
 
 .ourtrainer-trainer {
+  max-width: 1110px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .ourtrainer-trainer ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #fff;
   font-size: 20px;
   margin-bottom: 20px;
 }
 
+.trainer {
+  max-width: 555px;
+  width: 50%;
+}
 
-.trainer::after {
-  content: "";
-  display: block;
-  width: 150%;
-  height: 2px;
-  background-color: #fff;
-  margin-top: 10px;
+.staff {
+  max-width: 555px;
+  width: 50%;
 }
 
 .trainer:hover, .staff:hover {
@@ -257,49 +256,71 @@ margin-top: 10px;
 
 .trainer:hover::after, .staff:hover::after {
   height: 4px;
-}
-
-.staff::after {
-  /* content: "";
+  content: "";
   display: block;
   width: 100%;
   height: 2px;
   background-color: #fff;
-  margin-top: 10px; */
+  margin-top: 10px;
 }
 
-.trainer {
-  width: 33%;
-}
-
-.staff {
-  width: 33%;
-}
 
 .ourtrainer-img {
-  /* max-width: 1110px; */
+  max-width: 1110px;
   margin: 0 auto;
 }
-.ourtrainer-img ul{
+
+.ourtrainer-img-trainer {
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: -4px;
 }
 
-.ourtrainer-img ul li img {
-  /* height: 467px; */
+.trainer-pic {
+  max-width: 360px;
   width: 100%;
-}
-
-.trainer-1 {
-  
-}
-
-.trainer-2 {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 
 }
 
-.trainer-3 {
+.ourtrainer-img-staff {
+  display: none;
+  margin-bottom: -4px;
+  max-width: 1110px;
+  gap: 10px;
+}
 
+
+.staff-pic {
+  max-width: 550px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.ourtrainer-img-explain {
+  max-width: 1110px;
+  margin: -10px auto;
+}
+
+.ourtrainer-img-trainer-ex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.trainer-ex {
+  max-width: 360px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: #fff;
+  padding: 20px;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 
@@ -327,26 +348,11 @@ font-size: 20px;
 margin-top: 10px;
 }
 
-.studio-img {
-
-  }
-
-.studio-img ul {
-  display: flex;
-}
-
-.studio-img-1 {
-
-}
-
-.studio-img-2 {
-
-}
-
-#studio img {
-  max-width: 1110px;
+.carouselImg {
+  max-width: 1170px;
   width: 100%;
 }
+
 
 /* PRICE */
 
@@ -362,16 +368,17 @@ margin-top: 10px;
 
 .pricecontent {
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
+  justify-content: center;
   margin-top: 30px;
   text-align: center;
 }
 
 .pricecontent ul {
-  max-width: 32%;
+  max-width: 360px;
+  min-width: 100px;
   width: 100%;
   background-color: #fff;
-  padding: 20px;
   border-radius: 15px;
 }
 
@@ -379,8 +386,8 @@ margin-top: 10px;
   width: 100%;
 }
 
-.price-course-content {
-
+.pricecontent-ul {
+  padding: 40px;
 }
 
 .price-week {
@@ -389,11 +396,11 @@ margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* 文字がはみ出る */
 .price-price {
   width: 100%;
   font-size: 48px;
   line-height: 150%;
+  padding-top: 5px;
 }
 
 .price-price-sub {
@@ -444,13 +451,13 @@ margin-top: 10px;
   width: 100%;
   height: 2px;
   background-color: #d9d9d9;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 
 .price-recommend {
   position: relative;
-  top: -40px;
+  top: -20px;
   z-index: 50;
   width: 80%;
   margin: 0 auto;
@@ -460,9 +467,11 @@ margin-top: 10px;
   color: #EB51C2;
   background-color: #fff;
   border-radius: 25px;
-  /* padding入れると全体下がってします */
+  /* padding入れると全体下がってしまう */
   padding: 5px 10px 10px;
 }
+
+/* FAQ */
 
 .faq-all {
   background-color: #fff;
@@ -470,12 +479,31 @@ margin-top: 10px;
 
 }
 
-.faq-content {
 
+.faq-close-1, .faq-close-2, .faq-close-3 {
+  display: flex;
+  justify-content: space-between;
 }
 
 .faq-question {
   font-size: 15px;
+}
+
+.faq-question-open-1, .faq-question-open-2, .faq-question-open-3 {
+  content: "";
+  display: inline-block;
+  transition: all .4s;
+  cursor: pointer;
+  width: 8px; /* ボックスの横幅を指定する */
+  height: 8px; /* ボックスの高さを指定する */
+  border-top: 3px solid #EB51C2; /* 境界線の上部を実線に指定する*/
+  border-right: 3px solid #EB51C2;/* 境界線の上部を実線に指定する*/
+  align-items: center;
+  vertical-align: middle;
+  transform: rotate(-225deg);
+  position: relative;
+  left: 5px;
+  margin-left: 10px;
 }
 
 .faq-question:before {
@@ -488,12 +516,36 @@ margin-top: 10px;
   color: #EB51C2;
 }
 
-.faq-answer {
-  font-size: 15px;
-  /* display: none; */
+.faq-answer-1 {
+  width: 100%;
 }
 
-.faq-answer:before {
+.answer-close-1, .answer-close-2, .answer-close-3 {
+  max-width: 1080px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+  display: none;
+
+}
+
+
+.faq-question-open-1.active, .faq-question-open-2.active, .faq-question-open-3.active {
+  content: "";
+  display: inline-block;
+  width: 8px; /* ボックスの横幅を指定する */
+  height: 8px; /* ボックスの高さを指定する */
+  border-top: 3px solid #EB51C2; /* 境界線の上部を実線に指定する*/
+  border-right: 3px solid #EB51C2;/* 境界線の上部を実線に指定する*/
+  align-items: center;
+  vertical-align: middle;
+  transform: rotate(-45deg);
+  position: relative;
+  left: 5px;
+  margin-left: 10px;
+}
+
+.faq-answer-1:before, .faq-answer-2:before, .faq-answer-3:before {
   content: "A";
   display: inline-block;
   width: 25px;
@@ -503,28 +555,14 @@ margin-top: 10px;
   color: #EB51C2;
 }
 
-.faq-question::after {
-  content: "";
-  display: inline-block;
-  width: 8px; /* ボックスの横幅を指定する */
-  height: 8px; /* ボックスの高さを指定する */
-  border-top: 3px solid #EB51C2; /* 境界線の上部を実線に指定する*/
-  border-right: 3px solid #EB51C2;/* 境界線の上部を実線に指定する*/
-  /* align-items: center; */
-  vertical-align: middle;
-  transform: rotate(-225deg);
-  position: relative;
-  left: 5px;
-}
-
-.faq-answer::after {
+.faq-cover::after {
   content: "";
   display: block;
   width: 100%;
   height: 2px;
   background-color: #d9d9d9;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -572,7 +610,7 @@ margin-top: 10px;
   height: 50px;
   width: 50px;
   position: fixed;
-  right: 250px;
+  right: 100px;
   bottom: 30px;
   border-radius: 50%;
   display: flex;
@@ -596,4 +634,10 @@ html {
   scroll-behavior: smooth;
   margin: 0 auto;
   max-width: 1440px;
+}
+
+
+
+@media (max-width: 768px) {
+
 }
