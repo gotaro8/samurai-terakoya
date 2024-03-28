@@ -10,7 +10,6 @@ a {
 
 .wrapper {
   max-width: 1440px;
-  /* margin: 0 auto; */
 }
 
 #header {
@@ -28,6 +27,7 @@ a {
 }
 
 .main-all {
+  width: 1440px;
 }
 
 .mainvisual {
@@ -83,12 +83,15 @@ a {
 }
 
 .mainvisual-img {
+  max-width: 1440px;
+  width: 100%;
   text-align: right;
 }
 
 .mainvisual-img img {
-  width: 100%;
   max-width: 1060px;
+  width: 100%;
+  object-fit: cover;
   border-end-start-radius: 90px;
 } 
 
@@ -106,6 +109,8 @@ a {
 
 
 .mainvisual-catch {
+  max-width: 1440px;
+  width: 100%;
   text-align: center;
   position: relative;
   top: -30px;
@@ -183,6 +188,7 @@ line-height: 30px;
 }
 
 .explain-2 {
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -654,19 +660,614 @@ html {
 
 
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:768px) {
+
+  * {
+    outline: 2px solid blue;
+    box-sizing: border-box;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .wrapper {
+    max-width: 768px;
+  }
 
   #header {
     z-index: 20;
   }
 
-  .mainvisual-img img {
-    max-width: 80%;
-    position: relative;
-    right: 0;
+  .wrapper {
+    max-width: 768px;
   }
-
+  
+  .header-title {
+    width: 100%;
+    padding: 20px 0 0 30px;
+  }
+  
+  .header-logo {
+    max-width: 180px;
+  }
+  
+  .main-all {
+    max-width: 768px;
+  }
+  
   .mainvisual {
-
+    width: 100%;
+    margin-left: 30px;
+    position: absolute;
+    top: 150px;
   }
+
+  .mainvisual-title, .mainvisual-title-2 {
+    font-size: 41.3px;
+  }
+
+  .mainvisual-title-2 {
+    display: block;
+    max-width: 175px;
+  }
+
+  .mainvisual-shop {
+    font-size: 13.13px;
+    max-width: 228px;
+  }
+  
+  
+  .mainvisual-img {
+    max-width: 768px;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .mainvisual-img img {
+    width: 90%;
+    object-fit: cover;
+    border-end-start-radius: 90px;
+  } 
+  
+  .btn-common {
+    max-width: 220px;
+    font-size: 13px;
+  }
+  
+  .mainvisual-catch-inner-1 {
+    margin: 0 auto;
+    max-width: 288px;
+    font-size: 56px;
+    color: #EB51C2;
+  
+  }
+  
+  .mainvisual-catch-inner-2 {
+    max-width: 245px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  
+  .mainvisual-catch-inner-2-span {
+    color: #EB51C2;
+  }
+  
+  
+  .mainvisual-catch-inner-3 {
+    max-width: 500px;
+    font-size: 16px;
+    margin: 20px auto;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+
+  /* explain */
+  
+  #explain img {
+    width: 100%;
+  }
+  
+  
+  .explain-1 {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  
+  
+  .explain-img-contain {
+    max-width: 500px;
+    width: 100%;
+    right: 0;
+    padding: 50px 20px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+
+    }
+  
+  
+  .explain-training-pink {
+    color: #EB51C2;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  
+  .explain-training-sub {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .explain-training-content {
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 30px;
+  }
+  
+  .explain-2 {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  
+  .explain-2  .explain-img-contain {
+    max-width: 500px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    padding: 50px 20px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+  }
+  
+  .explain-training-green {
+    color: #00B21B;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .explain-btn {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .explain-btn a {
+    max-width: 500px;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  /* ourtrainer */
+  
+  .ourtrainer-all {
+    width: 768px;
+    background-color: #EB51C2;
+    padding: 20px 120px 50px;
+    margin-top: 50px;
+  }
+  
+  .ourtrainer {
+    max-width: 768px;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  
+  .ourtrainer-title-en {
+    color: #fff;
+    font-size: 64px;
+    font-weight: lighter;
+    padding-top: 96px;
+  }
+  
+  .ourtrainer-title-ja {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+  }
+  
+  .ourtrainer-trainer {
+    max-width: 768px;
+    width: 100%;
+  }
+  
+  /* .ourtrainer-trainer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+  } */
+  
+  .trainer {
+    max-width: 300px;
+    width: 50%;
+  }
+  
+  .staff {
+    max-width: 300px;
+    width: 50%;
+  }
+  
+  /* .trainer:hover, .staff:hover {
+    font-weight: bold;
+  } */
+  
+  /* .trainer:hover::after, .staff:hover::after {
+    height: 4px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 10px;
+  } */
+  
+  
+  .ourtrainer-img {
+    /* max-width: 768px; */
+  }
+  
+  .ourtrainer-img-trainer {
+    display: block;
+  }
+  
+  .trainer-pic {
+    max-width: 550px;
+    /* width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+  
+  }
+  
+  .ourtrainer-img-staff {
+    /* display: none;
+    margin-bottom: -4px;
+    max-width: 1110px;
+    gap: 10px; */
+  }
+  
+  
+  .staff-pic {
+    max-width: 550px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .ourtrainer-img-explain {
+    /* max-width: 768px;
+    margin: -10px auto; */
+  }
+  
+  .trainer-ex {
+    /* max-width: 360px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+  }
+  
+  
+  /* Studio */
+  
+  .studio-all {
+    width: 768px;
+    padding: 0 auto;
+  }
+  
+  
+  .studio-title-en {
+    padding-top: 30px;
+  }
+  
+  .studio-title-ja {
+  color: #EB51C2;
+  font-size: 20px;
+  margin-top: 10px;
+  }
+  
+  .carouselImg {
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  
+  /* PRICE */
+  
+  .price-all {
+    /* background-color: #EB51C2;
+    padding: 20px 120px 50px;
+    margin-top: 50px; */
+  }
+  
+  .price {
+    /* max-width: 768px;
+    width: 100%; */
+  }
+  
+  .pricecontent {
+    display: flex;
+    max-width: 768px;
+    gap: 0;
+    margin: 0 auto;
+    overflow-x: scroll;
+  }
+  
+  .pricecontent-ul {
+    max-width: 500px;
+    margin: 20px;
+    min-width: 0;
+    width: 90%;
+    flex-shrink: 0;
+  }
+  
+  .price-course {
+    width: 100%;
+  }
+  
+  .pricecontent-ul {
+    padding: 40px;
+  }
+  
+  .price-week {
+    font-size: 26px;
+    color: #EB51C2;
+    margin-bottom: 10px;
+  }
+  
+  .price-price {
+    width: 100%;
+    font-size: 48px;
+    line-height: 150%;
+    padding-top: 5px;
+  }
+  
+  .price-price-sub {
+    font-size: 16px;
+  }
+  
+  .price-sub-2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  
+  .price-sub-2-2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .price-sub-3 {
+    font-size: 18px;
+  }
+  
+  .price-sub-3-2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .price-food {
+    font-size: 18px;
+  }
+  
+  .price-sub-4 {
+    font-size: 18px;
+  }
+  
+  .price-sub-4-2 {
+    font-size: 18px;
+    font-weight: bold;
+  
+  }
+  
+   .price-sub-2, .price-sub-3, .price-sub-4 {
+    padding: 30px 10px 10px ;
+  }
+  
+   .price-price-sub::after, .price-sub-2-2::after, .price-sub-3-2::after {
+  
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #d9d9d9;
+    margin-top: 15px;
+  }
+  
+  
+  .price-recommend {
+    position: relative;
+    top: -20px;
+    z-index: 50;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid 1px #EB51C2;
+    color: #EB51C2;
+    background-color: #fff;
+    border-radius: 25px;
+    /* padding入れると全体下がってしまう */
+    padding: 5px 10px 10px;
+  }
+  
+  /* FAQ */
+  
+  .faq-all {
+    background-color: #fff;
+    padding: 30px 120px;
+  
+  }
+  
+  
+  .faq-close-1, .faq-close-2, .faq-close-3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .faq-question {
+    font-size: 15px;
+  }
+  
+  .faq-question-open-1, .faq-question-open-2, .faq-question-open-3 {
+    content: "";
+    display: inline-block;
+    transition: all .4s;
+    cursor: pointer;
+    width: 8px; /* ボックスの横幅を指定する */
+    height: 8px; /* ボックスの高さを指定する */
+    border-top: 3px solid #EB51C2; /* 境界線の上部を実線に指定する*/
+    border-right: 3px solid #EB51C2;/* 境界線の上部を実線に指定する*/
+    align-items: center;
+    vertical-align: middle;
+    transform: rotate(-225deg);
+    position: relative;
+    left: 5px;
+    margin-left: 10px;
+  }
+  
+  .faq-question:before {
+    content: "Q";
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    align-items: center;
+    background-color: #fff;
+    color: #EB51C2;
+  }
+  
+  .faq-answer-1 {
+    width: 100%;
+  }
+  
+  .answer-close-1, .answer-close-2, .answer-close-3 {
+    max-width: 1080px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    display: inline-block;
+    display: none;
+  
+  }
+  
+  
+  .faq-question-open-1.active, .faq-question-open-2.active, .faq-question-open-3.active {
+    content: "";
+    display: inline-block;
+    width: 8px; /* ボックスの横幅を指定する */
+    height: 8px; /* ボックスの高さを指定する */
+    border-top: 3px solid #EB51C2; /* 境界線の上部を実線に指定する*/
+    border-right: 3px solid #EB51C2;/* 境界線の上部を実線に指定する*/
+    align-items: center;
+    vertical-align: middle;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 5px;
+    margin-left: 10px;
+  }
+  
+  .faq-answer-1:before, .faq-answer-2:before, .faq-answer-3:before {
+    content: "A";
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    align-items: center;
+    background-color: #fff;
+    color: #EB51C2;
+  }
+  
+  .faq-cover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .faq-img {
+    background-color: #EB51C2;
+  }
+  
+  .faq-img-content img{
+    width: 100%;
+  }
+  
+  .faq-img-come {
+    padding-bottom: 40px;
+  }
+  
+  .faq-img-come-content {
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .faq-img-come > .btn-common {
+    background-color: #fff;
+    color: #EB51C2;
+    margin: 0 auto;
+  } 
+  
+  /* footer */
+  
+  .footer-title {
+    background-color: black;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .footer-title p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* １番最後に付けないと機能しない？ */
+    background-color: #fff;
+  }
+  
+  .pagetop-arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 4px solid #EB51C2;
+    border-right: 4px solid #EB51C2;
+    transform: translateY(20%) rotate(-45deg);
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    max-width: 768px;
+    width: 100%;
+  }
+  
+  
 }
