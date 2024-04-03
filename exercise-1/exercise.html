@@ -33,7 +33,8 @@
         </div>
 
         <div class="mainvisual-img">
-          <img src="img/bg_mv.png" alt="">
+          <img class="pc-img" src="img/bg_mv_PC.png" alt="">
+          <img class="sp-img" src="img/bg_mv_SP.png" alt="">
         </div>
 
       <div class="mainvisual-catch">
@@ -57,7 +58,8 @@
           <ul class="explain-img-contain">
             <li class="explain-training-pink">Training</li>
             <li class="explain-training-sub">セッションはすべて英語LAさながらの環境</li>
-            <li class="explain-training-content">ネイティブスピーカーによる50分のパーソナルトレーニングはすべて英語です！アップテンポの洋楽が流れる空間でテンション高めのトレーナーが英語であなたのトレーニングを盛り上げてくれます。ダイエットでよく使う英語をまとめたオリジナルテキストもあるのでスピーキング学習もバッチリです！
+            <li class="explain-training-content">ネイティブスピーカーによる50分のパーソナルトレーニングはすべて英語です！アップテンポの洋楽が流れる空間でテンション高めのトレーナーが英語であなたのトレーニングを盛り上げてくれます。
+              ダイエットでよく使う英語をまとめたオリジナルテキストもあるのでスピーキング学習もバッチリです！ <br>
               英語に苦手意識がある方は日本人トレーナーも選べますのでご安心してください。</li>
           </ul>
         </div>
@@ -67,7 +69,7 @@
           <img class="explain-img" src="img/about-food.png" alt="">
           </h2>
 
-          <ul class="explain-img-contain">
+          <ul class="explain-img-contain-2">
             <li class="explain-training-green">Food</li>
             <li class="explain-training-sub">低糖質レストランを完備！美味しく食べてダイエット</li>
             <li class="explain-training-content">食事制限って大変ですよね......。でも大丈夫！ENGBODY館内には低糖質レストラン『LCR』を完備しています。Low carb（低糖質）なのにとっても美味しい味に驚くはずです！メニューも豊富で飽きさせません。美味しく食べてしっかり痩せる！しかも英語力もアップ！それがENGBODYなのです。</li>
@@ -98,22 +100,29 @@
 
       <div class="ourtrainer-img">
         <ul class="ourtrainer-img-trainer">
-          <li class="trainer-1"><img class="trainer-pic" src="img/trainer01.png" alt=""></li>
-          <li class="trainer-1"><img class="trainer-pic" src="img/trainer02.png" alt=""></li>
-          <li class="trainer-1"><img class="trainer-pic" src="img/trainer03.png" alt=""></li>
+          <div class="trainer-1">
+            <li><img class="trainer-pic" src="img/trainer01.png" alt=""></li>
+            <p class="trainer-ex">こんにちは！英語で楽しくトレーニングしましょう。日本語が話せますのでご安心ください。</p>
+          </div>
+          <div class="trainer-1">
+            <li><img class="trainer-pic" src="img/trainer02.png" alt=""></li>
+            <p class="trainer-ex">Hello! 筋肉をつけすぎずしなやかな体を作ることが得意です！美しさを磨いていきましょう。</p>
+          </div>
+          <div class="trainer-1">
+            <li><img class="trainer-pic" src="img/trainer03.png" alt=""></li>
+            <p class="trainer-ex">Hi, 負荷や強度の高いトレーニングがしたいならおまかせてください！どんなご要望もできるかぎり叶えますよ！</p>
+          </div>
         </ul>
         <ul class="ourtrainer-img-staff">
           <li class="staff-1"><img class="staff-pic" src="img/staff01.png" alt=""></li>
-          <li class="staff-1"><img class="staff-pic" src="img/staff02.png" alt=""></li>
+          <!-- floatで横並びにするのにstaff-1で2つともあてると全て浮いてしまって要素外にでるのでstaff-2に変更 -->
+          <li class="staff-2"><img class="staff-pic" src="img/staff02.png" alt=""></li>
         </ul>
       </div>
-      <div class="ourtrainer-img-explain">
+      <!-- <div class="ourtrainer-img-explain">
         <ul class="ourtrainer-img-trainer-ex">
-          <p class="trainer-ex">こんにちは！英語で楽しくトレーニングしましょう。日本語が話せますのでご安心ください。</p>
-          <p class="trainer-ex">Hello! 筋肉をつけすぎずしなやかな体を作ることが得意です！美しさを磨いていきましょう。</p>
-          <p class="trainer-ex">Hi, 負荷や強度の高いトレーニングがしたいならおまかせてください！どんなご要望もできるかぎり叶えますよ！</p>
         </ul>
-      </div>
+      </div> -->
     </div>
 
     
@@ -208,6 +217,12 @@
             </li>
           </ul>
         </div>
+
+        <div class="scroll-btn-box">
+        <button class="scroll-btn"></button>
+        <p class="scroll-scroll">スクロール</p>
+        </div>
+
         </div>
         </section>
 
@@ -251,7 +266,7 @@
             </div>
           </div>
           </div>
-        </div>
+       
 
     
           <div class="faq-img">
@@ -264,6 +279,7 @@
               <a href="#" class="btn-common">無料カウンセリングを受ける</a>
             </div>
           </div>
+        </div>
           </section>
 
           <footer id="footer" class="wrapper">
