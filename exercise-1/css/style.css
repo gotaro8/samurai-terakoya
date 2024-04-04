@@ -1,0 +1,1280 @@
+* {
+  /* outline: 2px solid blue; */
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+}
+
+.header-title {
+  width: 100%;
+  padding: 20px 0 0 30px;
+}
+
+.header-logo {
+  width: 180px;
+}
+
+.main-all {
+  width: 1440px;
+}
+
+.mainvisual {
+  max-width: 476px;
+  width: 100%;
+  margin-left: 173px;
+  position: absolute;
+  top: 220px;
+  z-index: 10;
+
+}
+
+.mainvisual-title {
+  max-width: 476px;
+  width: 100%;
+  font-size: 86px;
+  font-weight: lighter;
+  line-height: 1.5;
+  background: #fff;
+  display: inline;
+  /* テキストの後ろにだけ背景を惹く */
+  -webit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.mainvisual-title-2 {
+  position: relative;
+  top: -10px;
+  max-width: 476px;
+  width: 100%;
+  font-size: 86px;
+  font-weight: lighter;
+  line-height: 1.5;
+  background: #fff;
+  display: inline;
+  /* テキストの後ろにだけ背景を惹く */
+  -webit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.mainvisual-span {
+  color: #EB51C2;
+}
+
+.mainvisual-shop {
+  font-size: 26.5px;
+  font-weight: bold;
+  background: #fff;
+  line-height: 1.5;
+  /* テキストの後ろにだけ背景を表示する */
+  -webit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.mainvisual-img {
+  max-width: 1440px;
+  width: 100%;
+  text-align: right;
+}
+
+.sp-img {
+  display: none;
+}
+
+.pc-img {
+  max-width: 1060px;
+  width: 100%;
+  object-fit: cover;
+  border-end-start-radius: 90px;
+} 
+
+.btn-common {
+  display: block;
+  width: 330px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(235, 81, 194);
+  border-radius: 90px;
+  font-size: 20px;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+
+.mainvisual-catch {
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+.mainvisual-catch-inner-1 {
+  font-size: 108px;
+  color: #EB51C2;
+
+}
+
+.mainvisual-catch-inner-2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.mainvisual-catch-inner-2-span {
+  color: #EB51C2;
+}
+
+
+.mainvisual-catch-inner-3 {
+  max-width: 705px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+#explain img {
+  max-width: 950px;
+  width: 100%;
+}
+
+
+.explain-1 {
+  width: 100%;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.explain-img-left {
+  width: 100%;
+}
+
+
+.explain-img-contain {
+  max-width: 555px;
+  width: 100%;
+  position: relative;
+  right: 50px;
+  top: 80px;
+  height: 468px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: black;
+  padding: 50px;
+  box-shadow: 5px 5px 4px #f3f3f3;
+  z-index: 20;
+}
+
+.explain-training-pink {
+  color: #EB51C2;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.explain-training-sub {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.explain-training-content {
+font-size: 15px;
+line-height: 30px;
+}
+
+.explain-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.explain-img-contain-2 {
+  max-width: 555px;
+  width: 100%;
+  position: relative;
+  left: 50px;
+  top: 80px;
+  height: 468px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: black;
+  padding: 50px;
+  box-shadow: 5px 5px 4px #f3f3f3;
+  z-index: 20;
+}
+
+.explain-training-green {
+  color: #00B21B;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.explain-btn {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.explain-btn a {
+  display: inline-block;
+}
+
+/* ourtrainer */
+
+.ourtrainer-all {
+  width: 1440px;
+  background-color: #EB51C2;
+  padding: 20px 120px 50px;
+  margin-top: 50px;
+}
+
+.ourtrainer {
+  max-width: 1110px;
+  padding-bottom: 60px;
+}
+
+.ourtrainer-title-en {
+  color: #fff;
+  font-size: 64px;
+  font-weight: lighter;
+  padding-top: 96px;
+}
+
+.ourtrainer-title-ja {
+color: #fff;
+font-size: 20px;
+margin-top: 10px;
+}
+
+.ourtrainer-trainer {
+  max-width: 1110px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ourtrainer-trainer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.trainer {
+  max-width: 555px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.staff {
+  max-width: 555px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.trainer:hover, .staff:hover {
+  font-weight: bold;
+}
+
+.trainer:hover::after, .staff:hover::after {
+  height: 4px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+
+.ourtrainer-img {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.ourtrainer-img-trainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: -4px;
+}
+
+.trainer-pic {
+  max-width: 360px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.ourtrainer-img-staff {
+  display: none;
+  margin-bottom: -4px;
+  max-width: 1110px;
+  gap: 10px;
+}
+
+
+.staff-pic {
+  max-width: 550px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-left: 5px;
+}
+
+.staff-1 {
+  float: center;
+}
+
+
+.trainer-1 {
+  display: block;
+}
+
+.trainer-ex {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+  height: 70px;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: #fff;
+  padding: 15px;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+  top: -10px;
+
+}
+
+
+/* Studio */
+
+.studio-all {
+  width: 1440px;
+  background-color: #fff;
+  padding: 30px 120px;
+}
+
+.studio {
+  margin: 0 auto;
+  max-width: 1200px;
+  /* padding: 50px 0 0 50px; */
+  padding-bottom: 60px;
+}
+
+.studio-title-en {
+  color: black;
+  font-size: 64px;
+  font-weight: lighter;
+  padding-top: 96px;
+}
+
+.studio-title-ja {
+color: #EB51C2;
+font-size: 20px;
+margin-top: 10px;
+}
+
+.carouselImg {
+  max-width: 1170px;
+  width: 100%;
+}
+
+
+/* PRICE */
+
+.price-all {
+  width: 1440px;
+  background-color: #EB51C2;
+  padding: 20px 120px 50px;
+  margin-top: 50px;
+}
+
+.price {
+  width: 100%;
+}
+
+.pricecontent {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pricecontent ul {
+  max-width: 400px;
+  min-width: 100px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.price-course {
+  width: 100%;
+}
+
+.pricecontent-ul {
+  padding: 40px;
+}
+
+.price-week {
+  font-size: 26px;
+  color: #EB51C2;
+  margin-bottom: 10px;
+}
+
+.price-price {
+  width: 100%;
+  font-size: 48px;
+  line-height: 150%;
+  padding-top: 5px;
+}
+
+.price-price-sub {
+  font-size: 16px;
+}
+
+.price-sub-2 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.price-sub-2-2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price-sub-3 {
+  font-size: 18px;
+}
+
+.price-sub-3-2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price-food {
+  font-size: 18px;
+}
+
+.price-sub-4 {
+  font-size: 18px;
+}
+
+.price-sub-4-2 {
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+ .price-sub-2, .price-sub-3, .price-sub-4 {
+  padding: 30px 10px 10px ;
+}
+
+ .price-price-sub::after, .price-sub-2-2::after, .price-sub-3-2::after {
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+  margin-top: 15px;
+}
+
+
+.price-recommend {
+  position: relative;
+  top: -60px;
+  z-index: 50;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid 1px #EB51C2;
+  color: #EB51C2;
+  background-color: #fff;
+  border-radius: 25px;
+  /* padding入れると全体下がってしまう */
+  padding: 10px 10px 10px;
+}
+
+.scroll-btn {
+  display: none;
+  position: relative;
+  top: 25px;
+  left: 10px;
+  display: block;
+  width: 45px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.scroll-btn {
+  display: none;
+}
+
+.scroll-scroll {
+  display: none;
+}
+
+/* FAQ */
+
+.faq-all {
+  width: 1440px;
+  background-color: #fff;
+}
+
+.faq-content {
+  padding: 30px 120px 0 120px;
+
+}
+
+
+.faq-close-1, .faq-close-2, .faq-close-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-question {
+  font-size: 15px;
+}
+
+.faq-question-open-1, .faq-question-open-2, .faq-question-open-3 {
+  content: "";
+  display: inline-block;
+  transition: all .4s;
+  cursor: pointer;
+  width: 8px; /* ボックスの横幅を指定する */
+  height: 8px; /* ボックスの高さを指定する */
+  border-top: 3px solid #EB51C2; /* 境界線の上部を実線に指定する*/
+  border-right: 3px solid #EB51C2;/* 境界線の上部を実線に指定する*/
+  align-items: center;
+  vertical-align: middle;
+  transform: rotate(-225deg);
+  position: relative;
+  left: 5px;
+  margin-left: 10px;
+}
+
+.faq-question:before {
+  content: "Q";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  align-items: center;
+  background-color: #fff;
+  color: #EB51C2;
+}
+
+.faq-answer-1 {
+  width: 100%;
+}
+
+.answer-close-1, .answer-close-2, .answer-close-3 {
+  max-width: 1080px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+  display: none;
+
+}
+
+
+.faq-question-open-1.active, .faq-question-open-2.active, .faq-question-open-3.active {
+  content: "";
+  display: inline-block;
+  width: 8px; /* ボックスの横幅を指定する */
+  height: 8px; /* ボックスの高さを指定する */
+  border-top: 3px solid #EB51C2; /* 境界線の上部を実線に指定する*/
+  border-right: 3px solid #EB51C2;/* 境界線の上部を実線に指定する*/
+  align-items: center;
+  vertical-align: middle;
+  transform: rotate(-45deg);
+  position: relative;
+  left: 5px;
+  margin-left: 10px;
+}
+
+.faq-answer-1:before, .faq-answer-2:before, .faq-answer-3:before {
+  content: "A";
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  align-items: center;
+  background-color: #fff;
+  color: #EB51C2;
+}
+
+.faq-cover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.faq-img {
+  width: 100%;
+  background-color: #EB51C2;
+}
+
+.faq-img-content img{
+  width: 100%;
+}
+
+.faq-img-come {
+  padding-bottom: 40px;
+}
+
+.faq-img-come-content {
+  font-size: 64px;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.faq-img-come > .btn-common {
+  background-color: #fff;
+  color: #EB51C2;
+  margin: 0 auto;
+} 
+
+/* footer */
+
+.footer-title {
+  width: 1440px;
+  background-color: black;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-title p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 100px;
+  bottom: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  /* １番最後に付けないと機能しない？ */
+  background-color: #fff;
+}
+
+.pagetop-arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 4px solid #EB51C2;
+  border-right: 4px solid #EB51C2;
+  transform: translateY(20%) rotate(-45deg);
+}
+
+
+html {
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+  * {
+    /* outline: 2px solid blue; */
+    box-sizing: border-box;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .wrapper {
+    max-width: 768px;
+  }
+
+  #header {
+    z-index: 20;
+  }
+
+  .wrapper {
+    max-width: 768px;
+  }
+  
+  .header-title {
+    width: 100%;
+    padding: 20px 0 0 30px;
+  }
+  
+  .header-logo {
+    max-width: 180px;
+    padding-top: 50px;
+  }
+  
+  .main-all {
+    max-width: 768px;
+  }
+  
+  .mainvisual {
+    width: 100%;
+    margin-left: 30px;
+    position: absolute;
+    top: 150px;
+    margin-top: 200px;
+  }
+
+  .mainvisual-title, .mainvisual-title-2 {
+    font-size: 4rem;
+  }
+
+  .mainvisual-title-2 {
+    display: inline;
+    max-width: 100%;
+  }
+
+  .mainvisual-shop {
+    display: inline-block;
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  
+  
+  .mainvisual-img {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  .sp-img {
+    display: inline-block;
+    object-fit: cover;
+    width: 80%;
+    text-align: right;
+  }
+
+  .pc-img {
+    display: none;
+  }
+  
+
+  .btn-common {
+    max-width: 220px;
+    font-size: 13px;
+  }
+  
+  .mainvisual-catch-inner-1 {
+    margin: 0 auto;
+    max-width: 90%;
+    font-size: 8rem;
+    color: #EB51C2;
+  }
+  
+  .mainvisual-catch-inner-2 {
+    max-width: 90%;
+    font-size: 2.5rem;
+    margin: 0 auto;
+  }
+  
+  .mainvisual-catch-inner-2-span {
+    color: #EB51C2;
+  }
+  
+  
+  .mainvisual-catch-inner-3 {
+    max-width: 90%;
+    font-size: 2rem;
+    margin: 20px auto;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+
+  /* explain */
+  
+  #explain img {
+    width: 100%;
+  }
+  
+  
+  .explain-1 {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  
+  
+  .explain-img-contain {
+    max-width: 90%;
+    width: 100%;
+    right: 0;
+    padding: 50px 20px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    height: auto;
+    }
+  
+  
+  .explain-training-pink {
+    color: #EB51C2;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 20px;
+    line-height: 1.5;
+    padding-left: 20px;
+  }
+  
+  .explain-training-sub {
+    max-width: 90%;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .explain-training-content {
+  font-size: 1.9rem;
+  line-height: 50px;
+  margin-top: 30px;
+  padding: 20px;
+  }
+  
+  .explain-2 {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  
+  .explain-img-contain-2 {
+    max-width: 90%;
+    width: 100%;
+    right: 0;
+    padding: 50px 20px;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    top: -50px;
+    height: auto;
+  }
+  
+  .explain-training-green {
+    color: #00B21B;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 20px;
+    line-height: 1.5;
+    padding-left: 20px;
+  }
+  
+  .explain-btn {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .explain-btn a {
+    max-width: 80%;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 30px;
+    display: inline-block;
+  }
+  
+  /* ourtrainer */
+  
+  .ourtrainer-all {
+    /* width 768pxにしておかないと画面の右に余白ができる */
+    width: 768px;
+    background-color: #EB51C2;
+    padding: 50px;
+    margin-top: 50px;
+  }
+  
+  .ourtrainer {
+    max-width: 768px;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  
+  .ourtrainer-title-en {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: lighter;
+    padding-top: 96px;
+  }
+  
+  .ourtrainer-title-ja {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 10px;
+  }
+  
+  .ourtrainer-trainer {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .trainer {
+    max-width: 384px;
+    width: 50%;
+    font-size: 2rem;
+  }
+  
+  .staff {
+    max-width: 384px;
+    width: 50%;
+    font-size: 2rem;
+  }
+  
+  
+  .ourtrainer-img-trainer {
+    display: block;
+  }
+
+  .trainer-1 li {
+    text-align: center;
+  }
+  
+  .trainer-pic {
+    max-width: 100%;
+  }
+
+  .trainer-ex {
+    max-width: 100%;
+    /* margin: 0 auto; */
+    font-size: 1.5rem;
+    height: auto;
+    padding: 30px;
+  }
+  
+  .ourtrainer-img-staff {
+    text-align: center;
+  }
+  
+  
+  .staff-pic {
+    max-width: 550px;
+    width: 100%;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .ourtrainer-img-explain {
+    /* max-width: 768px;
+    margin: -10px auto; */
+  }
+  
+  .trainer-ex {
+    /* max-width: 360px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+  }
+  
+  
+  /* Studio */
+  
+  .studio-all {
+    max-width: 768px;
+    padding: 0;
+  }
+  
+  .studio {
+    max-width: 768px;
+    padding: 50px;
+  }
+
+  .studio-title-en {
+    padding-top: 30px;
+  }
+  
+  .studio-title-ja {
+  color: #EB51C2;
+  font-size: 20px;
+  margin-top: 10px;
+  }
+
+  .studio-img {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  
+  .carouselImg {
+    width: 100%;
+  }
+  
+  
+  /* PRICE */
+  
+  .price-all {
+    width: 768px;
+    margin: 0;
+    padding: 50px;
+  }
+  
+  .price {
+    /* max-width: 768px;
+    width: 100%; */
+  }
+  
+  .pricecontent {
+    display: flex;
+    max-width: 768px;
+    width: 100%;
+    gap: 5px;
+    margin: 0;
+    overflow-x: scroll;
+  }
+  
+  .pricecontent ul {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+  }
+  
+  .price-course {
+    width: 100%;
+  }
+  
+  .price-week {
+    font-size: 26px;
+    color: #EB51C2;
+    margin-bottom: 10px;
+  }
+  
+  .price-price {
+    width: 100%;
+    font-size: 48px;
+    line-height: 150%;
+    padding-top: 5px;
+  }
+  
+  .price-price-sub {
+    font-size: 16px;
+  }
+  
+  .price-sub-2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  
+  .price-sub-2-2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .price-sub-3 {
+    font-size: 18px;
+  }
+  
+  .price-sub-3-2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .price-food {
+    font-size: 18px;
+  }
+  
+  .price-sub-4 {
+    font-size: 18px;
+  }
+  
+  .price-sub-4-2 {
+    font-size: 18px;
+    font-weight: bold;
+  
+  }
+  
+   .price-sub-2, .price-sub-3, .price-sub-4 {
+    padding: 30px 10px 10px ;
+  }
+  
+   .price-price-sub::after, .price-sub-2-2::after, .price-sub-3-2::after {
+  
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #d9d9d9;
+    margin-top: 15px;
+  }
+  
+  
+  .price-recommend {
+    position: relative;
+    top: -60px;
+    z-index: 50;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid 1px #EB51C2;
+    color: #EB51C2;
+    background-color: #fff;
+    border-radius: 25px;
+    /* padding入れると全体下がってしまう */
+    padding: 5px 10px 10px;
+  }
+
+
+  .scroll-btn-box {
+    display: block;
+    position: relative;
+    bottom: 300px;
+    left: 365px;
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    opacity: 0.8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.scroll-btn {
+  position: relative;
+  top: 25px;
+  left: 10px;
+  display: block;
+  width: 45px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.scroll-btn::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -2px;
+  display: block;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+.scroll-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: -2px;
+  display: block;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.scroll-scroll {
+  position: absolute;
+  bottom: 15px;
+  font-size: 12px;
+  color: #fff;
+}
+  
+  /* FAQ */
+  
+  .faq-all {
+    width: 768px;
+    padding: 0;
+  }
+
+  .faq-content {
+    padding: 0;
+    margin: 0 20px;
+  }
+  
+  .faq-img {
+    margin-top: 50px;
+  }
+  
+  /* footer */
+  
+  .footer-title {
+    width: 768px;
+    background-color: black;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .footer-title p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* １番最後に付けないと機能しない？ */
+    background-color: #fff;
+  }
+  
+  .pagetop-arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 4px solid #EB51C2;
+    border-right: 4px solid #EB51C2;
+    transform: translateY(20%) rotate(-45deg);
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    max-width: 768px;
+    width: 100%;
+  }
+  
+  
+}
