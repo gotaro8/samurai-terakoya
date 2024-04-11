@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Josefin Sans", Arial, "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans", Meiryo, sans-serif;
+}
+
 
 a {
   text-decoration: none;
@@ -15,6 +20,10 @@ a {
 #header {
   position: absolute;
   top: 0;
+}
+
+.font-italic {
+  font-style: italic;
 }
 
 .header-title {
@@ -44,13 +53,13 @@ a {
   max-width: 476px;
   width: 100%;
   font-size: 86px;
-  font-weight: lighter;
-  line-height: 1.5;
+  font-weight: 600;
+  line-height: 1;
   background: #fff;
   display: inline;
   /* テキストの後ろにだけ背景を惹く */
-  -webit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  /* -webit-box-decoration-break: clone;
+  box-decoration-break: clone; */
 }
 .mainvisual-title-2 {
   position: relative;
@@ -58,13 +67,13 @@ a {
   max-width: 476px;
   width: 100%;
   font-size: 86px;
-  font-weight: lighter;
-  line-height: 1.5;
+  font-weight: 600;
+  line-height: 1.2;
   background: #fff;
   display: inline;
   /* テキストの後ろにだけ背景を惹く */
-  -webit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  /* -webit-box-decoration-break: clone;
+  box-decoration-break: clone; */
 }
 
 .mainvisual-span {
@@ -77,8 +86,8 @@ a {
   background: #fff;
   line-height: 1.5;
   /* テキストの後ろにだけ背景を表示する */
-  -webit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  /* -webit-box-decoration-break: clone;
+  box-decoration-break: clone; */
 }
 
 .mainvisual-img {
@@ -100,13 +109,13 @@ a {
 
 .btn-common {
   display: block;
-  width: 330px;
+  width: 370px;
   text-align: center;
   color: #fff;
   background-color: rgb(235, 81, 194);
   border-radius: 90px;
   font-size: 20px;
-  padding: 20px 10px;
+  padding: 30px 20px;
   margin-top: 20px;
 }
 
@@ -128,6 +137,8 @@ a {
 .mainvisual-catch-inner-2 {
   font-size: 32px;
   font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-top: 15px;
 }
 
 .mainvisual-catch-inner-2-span {
@@ -136,9 +147,11 @@ a {
 
 
 .mainvisual-catch-inner-3 {
-  max-width: 705px;
+  /* max-width: 705px;
   font-size: 16px;
-  margin: 0 auto;
+  margin: 0 auto; */
+  margin-top: 26px;
+  line-height: 2;
 }
 
 #explain img {
@@ -230,8 +243,10 @@ line-height: 30px;
 
 .ourtrainer-all {
   width: 1440px;
-  background-color: #EB51C2;
-  padding: 20px 120px 50px;
+  background-image: url(../img/price_bg.png);
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 20px 160px 150px;
   margin-top: 50px;
 }
 
@@ -243,13 +258,14 @@ line-height: 30px;
 .ourtrainer-title-en {
   color: #fff;
   font-size: 64px;
-  font-weight: lighter;
+  font-weight: 350;
   padding-top: 96px;
 }
 
 .ourtrainer-title-ja {
 color: #fff;
 font-size: 20px;
+font-weight: 350;
 margin-top: 10px;
 }
 
@@ -318,12 +334,11 @@ margin-top: 10px;
   display: none;
   margin-bottom: -4px;
   max-width: 1110px;
-  gap: 10px;
 }
 
 
 .staff-pic {
-  max-width: 550px;
+  max-width: 460px;
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -331,7 +346,10 @@ margin-top: 10px;
 }
 
 .staff-1 {
-  float: center;
+  float: left;
+}
+.staff-2 {
+  text-align: right;
 }
 
 
@@ -362,12 +380,12 @@ margin-top: 10px;
 .studio-all {
   width: 1440px;
   background-color: #fff;
-  padding: 30px 120px;
+  padding: 30px 160px 0 160px;
 }
 
 .studio {
-  margin: 0 auto;
-  max-width: 1200px;
+  /* margin: 0 auto; */
+  max-width: 1170px;
   /* padding: 50px 0 0 50px; */
   padding-bottom: 60px;
 }
@@ -375,18 +393,19 @@ margin-top: 10px;
 .studio-title-en {
   color: black;
   font-size: 64px;
-  font-weight: lighter;
-  padding-top: 96px;
+  font-weight: 350;
+  /* padding-top: 96px; */
 }
 
 .studio-title-ja {
 color: #EB51C2;
 font-size: 20px;
+font-weight: 350;
 margin-top: 10px;
 }
 
 .carouselImg {
-  max-width: 1170px;
+  max-width: 1110px;
   width: 100%;
 }
 
@@ -395,29 +414,41 @@ margin-top: 10px;
 
 .price-all {
   width: 1440px;
-  background-color: #EB51C2;
-  padding: 20px 120px 50px;
+  background-image: url(../img/price_bg.png);
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 20px 160px 150px;
   margin-top: 50px;
 }
 
 .price {
-  width: 100%;
+  max-width: 1170px;
 }
 
 .pricecontent {
   display: flex;
+  max-width: 1110px;
   gap: 15px;
   justify-content: space-between;
   margin-top: 30px;
   text-align: center;
 }
 
-.pricecontent ul {
-  max-width: 400px;
+.pricecontent-ul {
+  max-width: 360px;
   min-width: 100px;
   width: 100%;
   background-color: #fff;
   border-radius: 15px;
+}
+
+.pricecontent-ul-recommend {
+  max-width: 360px;
+  min-width: 100px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0 30px 0 30px;
 }
 
 .price-course {
@@ -495,7 +526,7 @@ margin-top: 10px;
 
 .price-recommend {
   position: relative;
-  top: -60px;
+  top: -20px;
   z-index: 50;
   width: 80%;
   margin: 0 auto;
@@ -506,7 +537,7 @@ margin-top: 10px;
   background-color: #fff;
   border-radius: 25px;
   /* padding入れると全体下がってしまう */
-  padding: 10px 10px 10px;
+  padding: 10px 0 10px;
 }
 
 .scroll-btn {
@@ -534,10 +565,16 @@ margin-top: 10px;
 .faq-all {
   width: 1440px;
   background-color: #fff;
+ 
+}
+
+.faq {
+  max-width: 1170px;
+  padding: 20px 160px 50px;
 }
 
 .faq-content {
-  padding: 30px 120px 0 120px;
+  padding: 30px 160px 0 160px;
 
 }
 
@@ -912,13 +949,17 @@ html {
   .ourtrainer-all {
     /* width 768pxにしておかないと画面の右に余白ができる */
     width: 768px;
-    background-color: #EB51C2;
-    padding: 50px;
+    background-image: url(../img/trainer_bg.png);
+    background-size: cover;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 600px;
+    margin: 0;
     margin-top: 50px;
   }
   
   .ourtrainer {
-    max-width: 768px;
+    /* max-width: 768px; */
     width: 100%;
     padding-bottom: 60px;
   }
@@ -926,7 +967,6 @@ html {
   .ourtrainer-title-en {
     color: #fff;
     font-size: 5rem;
-    font-weight: lighter;
     padding-top: 96px;
   }
   
@@ -951,6 +991,19 @@ html {
     max-width: 384px;
     width: 50%;
     font-size: 2rem;
+  }
+
+  .ourtrainer-img {
+    margin: 0 auto;
+  }
+
+  .staff-1 {
+    float: none;
+  }
+  
+  .staff-2 {
+    margin-top: 20px;
+    text-align: center;
   }
   
   
@@ -1042,29 +1095,30 @@ html {
   
   .price-all {
     width: 768px;
+    background-size: cover;
     margin: 0;
-    padding: 50px;
+    padding: 0;
+    padding-bottom: 50px;
   }
   
   .price {
-    /* max-width: 768px;
-    width: 100%; */
+    padding: 0 50px;
   }
   
   .pricecontent {
     display: flex;
-    max-width: 768px;
-    width: 100%;
-    gap: 5px;
+    gap: 20px;
     margin: 0;
+    padding: 0 40px;
     overflow-x: scroll;
   }
   
-  .pricecontent ul {
-    max-width: 650px;
-    margin: 0 auto;
+  .pricecontent-ul {
+    max-width: 700px;
+    width: 85%;
     margin-top: 50px;
-
+    padding: 70px 0 30px 0;
+    flex-shrink: 0;
   }
   
   .price-course {
@@ -1090,34 +1144,28 @@ html {
   
   .price-sub-2 {
     font-size: 18px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+    margin-top: 20px;
   }
   
   .price-sub-2-2 {
-    font-size: 18px;
-    font-weight: bold;
   }
   
   .price-sub-3 {
-    font-size: 18px;
+    margin-top: 20px;
   }
   
   .price-sub-3-2 {
-    font-size: 18px;
-    font-weight: bold;
   }
   
   .price-food {
-    font-size: 18px;
   }
   
   .price-sub-4 {
-    font-size: 18px;
+    margin-top: 20px;
   }
   
   .price-sub-4-2 {
-    font-size: 18px;
-    font-weight: bold;
   
   }
   
@@ -1129,12 +1177,21 @@ html {
   
     content: "";
     display: block;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     height: 2px;
     background-color: #d9d9d9;
-    margin-top: 15px;
+    margin-top: 40px;
   }
   
+  .pricecontent-ul-recommend {
+        max-width: 650px;
+    width: 85%;
+    margin-top: 50px;
+    /* padding: 70px 0 30px 0; */
+    flex-shrink: 0;
+    padding-top: 40px;
+  }
   
   .price-recommend {
     position: relative;
@@ -1156,15 +1213,15 @@ html {
   .scroll-btn-box {
     display: block;
     position: relative;
-    bottom: 300px;
-    left: 365px;
+    bottom: 400px;
+    left: 560px;
     width: 100px;
     height: 100px;
     background-color: #000000;
-    opacity: 0.8;
+    opacity: 0.6;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -1176,6 +1233,7 @@ html {
   top: 25px;
   left: 10px;
   display: block;
+  margin-left: 20px;
   width: 45px;
   height: 8px;
   border-radius: 5px;
@@ -1208,9 +1266,11 @@ html {
 }
 
 .scroll-scroll {
-  position: absolute;
-  bottom: 15px;
-  font-size: 12px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 55px;
+  font-size: 1rem;
   color: #fff;
 }
   
@@ -1219,6 +1279,10 @@ html {
   .faq-all {
     width: 768px;
     padding: 0;
+  }
+
+  .faq {
+    padding-left: 50px;
   }
 
   .faq-content {
