@@ -26,20 +26,20 @@ $('.trainer').click(function() {
 });
 
 
-  $('.faq-question-open-1').on('click', function() {
+  $('.faq-close-1').on('click', function() {
     $('.answer-close-1').slideToggle();
   });
 
-  $('.faq-question-open-2').on('click', function() {
+  $('.faq-close-2').on('click', function() {
     $('.answer-close-2').slideToggle();
   });
 
-  $('.faq-question-open-3').on('click', function() {
+  $('.faq-close-3').on('click', function() {
     $('.answer-close-3').slideToggle();
   });
 
 
-  $(".faq-question-open-1, .faq-question-open-2, .faq-question-open-3").click(function () {
+  $('.faq-close-1 faq-close-2 faq-close-3').click(function () {
     $(this).toggleClass('active');
 });
 

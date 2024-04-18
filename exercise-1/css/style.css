@@ -33,6 +33,8 @@ a {
 
 .header-logo {
   width: 180px;
+  margin-top: 3px;
+  margin-left: 10px;
 }
 
 .main-all {
@@ -57,13 +59,15 @@ a {
   line-height: 1;
   background: #fff;
   display: inline;
+  margin-left: 6px;
+  letter-spacing: 1px;
   /* テキストの後ろにだけ背景を惹く */
   /* -webit-box-decoration-break: clone;
   box-decoration-break: clone; */
 }
 .mainvisual-title-2 {
   position: relative;
-  top: -10px;
+  top: -4px;
   max-width: 476px;
   width: 100%;
   font-size: 86px;
@@ -71,9 +75,15 @@ a {
   line-height: 1.2;
   background: #fff;
   display: inline;
+  margin-left: 3px;
+  padding-top: 10px;
   /* テキストの後ろにだけ背景を惹く */
   /* -webit-box-decoration-break: clone;
   box-decoration-break: clone; */
+}
+
+.mainvisual-title-2, span, span {
+  margin-left: 3px;
 }
 
 .mainvisual-span {
@@ -81,10 +91,16 @@ a {
 }
 
 .mainvisual-shop {
+  max-width: 476px;
+  width: 100%;
+  height: 28px;
   font-size: 26.5px;
   font-weight: bold;
   background: #fff;
   line-height: 1.5;
+  letter-spacing: 1.3px;
+  padding-left: 3.4px;
+  margin-top: 7px;
   /* テキストの後ろにだけ背景を表示する */
   /* -webit-box-decoration-break: clone;
   box-decoration-break: clone; */
@@ -103,6 +119,7 @@ a {
 .pc-img {
   max-width: 1060px;
   width: 100%;
+  height: 680px;
   object-fit: cover;
   border-end-start-radius: 90px;
 } 
@@ -115,8 +132,10 @@ a {
   background-color: rgb(235, 81, 194);
   border-radius: 90px;
   font-size: 20px;
-  padding: 30px 20px;
-  margin-top: 20px;
+  font-weight: bold;
+  padding: 30px 10px;
+  margin-top: 30px;
+  letter-spacing: 2px;
 }
 
 
@@ -135,9 +154,13 @@ a {
 }
 
 .mainvisual-catch-inner-2 {
+  max-width: 489px;
+  width: 100%;
+  margin: 0 auto;
   font-size: 32px;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  text-align: center;
+  letter-spacing: 0.08em;
   margin-top: 15px;
 }
 
@@ -147,16 +170,20 @@ a {
 
 
 .mainvisual-catch-inner-3 {
-  /* max-width: 705px;
+  max-width: 705px;
+  width: 100%;
+  margin: 0 auto;
   font-size: 16px;
-  margin: 0 auto; */
-  margin-top: 26px;
+  margin-top: 28px;
   line-height: 2;
+  /* margin: 0 auto; */
+  /* margin-top: 30px; */
+  letter-spacing: -0.4px;
 }
 
 #explain img {
-  max-width: 950px;
-  width: 100%;
+  /* max-width: 950px; */
+  width: 950px;
 }
 
 
@@ -167,21 +194,21 @@ a {
 }
 
 .explain-img-left {
-  width: 100%;
+  width: 60%;
 }
 
 
 .explain-img-contain {
   max-width: 555px;
-  width: 100%;
+  width: 40%;
   position: relative;
-  right: 50px;
-  top: 80px;
+  /* right: 100px; */
+  top: 88px;
   height: 468px;
   border-radius: 10px;
   background-color: #fff;
   border: black;
-  padding: 50px;
+  padding: 70px 60px;
   box-shadow: 5px 5px 4px #f3f3f3;
   z-index: 20;
 }
@@ -190,53 +217,89 @@ a {
   color: #EB51C2;
   font-size: 24px;
   margin-bottom: 20px;
+  margin-left: 5px;
+  margin-top: 2px;
 }
 
 .explain-training-sub {
   font-size: 32px;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-top: 35px;
+  margin-left: 5px;
+  line-height: 1.3;
 }
 
 .explain-training-content {
 font-size: 15px;
-line-height: 30px;
+line-height: 27px;
+margin-top: 25px;
 }
 
 .explain-2 {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
+  margin-top: 100px;
+}
+
+.explain-img-2 {
+  width: 950px;
+}
+
+.explain-img-right {
+  width: 100%;
 }
 
 .explain-img-contain-2 {
-  max-width: 555px;
   width: 100%;
+  max-width: 555px;
   position: relative;
-  left: 50px;
-  top: 80px;
-  height: 468px;
+  top: 129px;
+  height: 414px;
   border-radius: 10px;
   background-color: #fff;
   border: black;
-  padding: 50px;
+  padding: 70px 60px;
   box-shadow: 5px 5px 4px #f3f3f3;
-  z-index: 20;
+  z-index: 30;
 }
 
 .explain-training-green {
   color: #00B21B;
   font-size: 24px;
   margin-bottom: 20px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.explain-training-sub-2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-left: 3px;
+  line-height: 1.5;
+
+}
+
+.explain-training-content-2 {
+  font-size: 15px;
+  line-height: 27px;
+  margin-top: 13px;
+  letter-spacing: -0.6px;
 }
 
 .explain-btn {
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 38px;
 }
 
-.explain-btn a {
+.btn-common {
   display: inline-block;
+  position: relative;
+  right: 23px;
 }
 
 /* ourtrainer */
@@ -252,14 +315,15 @@ line-height: 30px;
 
 .ourtrainer {
   max-width: 1110px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 
 .ourtrainer-title-en {
   color: #fff;
   font-size: 64px;
   font-weight: 350;
-  padding-top: 96px;
+  padding-top: 80px;
+  margin-left: 5px;
 }
 
 .ourtrainer-title-ja {
@@ -267,12 +331,14 @@ color: #fff;
 font-size: 20px;
 font-weight: 350;
 margin-top: 10px;
+margin-left: 10px;
 }
 
 .ourtrainer-trainer {
   max-width: 1110px;
   text-align: center;
   margin: 0 auto;
+  margin-top: 38px;
 }
 
 .ourtrainer-trainer ul {
@@ -319,8 +385,9 @@ margin-top: 10px;
 .ourtrainer-img-trainer {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: -4px;
+  gap: 15px;
+  margin-top: 35px;
+
 }
 
 .trainer-pic {
@@ -370,8 +437,11 @@ margin-top: 10px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   position: relative;
-  top: -10px;
-
+  top: -5px;
+  padding-bottom: 95px;
+  padding-top: 25px;
+  line-height: 1.7;
+  letter-spacing: -0.7px;
 }
 
 
@@ -387,14 +457,14 @@ margin-top: 10px;
   /* margin: 0 auto; */
   max-width: 1170px;
   /* padding: 50px 0 0 50px; */
-  padding-bottom: 60px;
 }
 
 .studio-title-en {
   color: black;
   font-size: 64px;
   font-weight: 350;
-  /* padding-top: 96px; */
+  margin-top: 12px;
+  margin-left: 10px;
 }
 
 .studio-title-ja {
@@ -402,11 +472,14 @@ color: #EB51C2;
 font-size: 20px;
 font-weight: 350;
 margin-top: 10px;
+margin-left: 10px;
 }
 
 .carouselImg {
   max-width: 1110px;
   width: 100%;
+  margin-top: 25px;
+  margin-left: 5px;
 }
 
 
@@ -416,19 +489,21 @@ margin-top: 10px;
   width: 1440px;
   background-image: url(../img/price_bg.png);
   background-repeat: no-repeat;
-  height: auto;
+  height: 885px;
   padding: 20px 160px 150px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .price {
   max-width: 1170px;
+  margin-top: 38px;
 }
 
 .pricecontent {
   display: flex;
   max-width: 1110px;
-  gap: 15px;
+  margin-right: 0;
+  margin-left: 9px;
   justify-content: space-between;
   margin-top: 30px;
   text-align: center;
@@ -440,6 +515,7 @@ margin-top: 10px;
   width: 100%;
   background-color: #fff;
   border-radius: 15px;
+  padding: 40px 20px 28px;
 }
 
 .pricecontent-ul-recommend {
@@ -448,51 +524,89 @@ margin-top: 10px;
   width: 100%;
   background-color: #fff;
   border-radius: 15px;
-  padding: 0 30px 0 30px;
+  padding: 0 20px;
 }
 
 .price-course {
   width: 100%;
 }
 
-.pricecontent-ul {
-  padding: 40px;
-}
 
 .price-week {
   font-size: 26px;
   color: #EB51C2;
-  margin-bottom: 10px;
+  margin-top: 7px;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
+.price-week-2 {
+  font-size: 26px;
+  color: #EB51C2;
+  margin-top: 6px;
+  margin-left: 64px;
+  font-weight: bold;
+}
+
+.price-week-3 {
+  font-size: 26px;
+  color: #EB51C2;
+  margin-top: 7px;
+  font-weight: bold;
+  margin-right: 30px;
 }
 
 .price-price {
-  width: 100%;
+  width: 184px;
+  height: 56px;
+  margin: 0 auto;
   font-size: 48px;
   line-height: 150%;
-  padding-top: 5px;
+  position: relative;
+  right: 7px;
+  top: 1px;
 }
 
 .price-price-sub {
   font-size: 16px;
+  letter-spacing: 0.4px;
+  position: relative;
+  top: 11px;
 }
 
 .price-sub-2 {
   font-size: 18px;
   padding-bottom: 10px;
+  width: 109px;
+  margin: 0 auto;
+  margin-top: 12px;
+  letter-spacing: -1.4px;
+  padding-top: 30px;
 }
 
 .price-sub-2-2 {
   font-size: 18px;
   font-weight: bold;
+  letter-spacing: -4px;
+  position: relative;
+  left: -6px;
+  bottom: 2px;
 }
 
 .price-sub-3 {
   font-size: 18px;
+  margin-top: 6px;
+  margin-left: 5px;
+  padding-top: 30px;
+  letter-spacing: -1px;
 }
 
 .price-sub-3-2 {
   font-size: 18px;
   font-weight: bold;
+  margin-left: 7px;
+  padding-top: 5px;
+  margin-top: 6px;
 }
 
 .price-food {
@@ -501,17 +615,18 @@ margin-top: 10px;
 
 .price-sub-4 {
   font-size: 18px;
+  padding-top: 32px;
 }
 
 .price-sub-4-2 {
   font-size: 18px;
   font-weight: bold;
-
+  padding-top: 9px;
 }
 
- .price-sub-2, .price-sub-3, .price-sub-4 {
-  padding: 30px 10px 10px ;
-}
+ /* .price-sub-2, .price-sub-3, .price-sub-4 {
+  padding: 30px 10px 12px ;
+} */
 
  .price-price-sub::after, .price-sub-2-2::after, .price-sub-3-2::after {
 
@@ -521,6 +636,7 @@ margin-top: 10px;
   height: 2px;
   background-color: #d9d9d9;
   margin-top: 15px;
+  margin-top: 22px;
 }
 
 
@@ -528,7 +644,7 @@ margin-top: 10px;
   position: relative;
   top: -20px;
   z-index: 50;
-  width: 80%;
+  width: 284px;
   margin: 0 auto;
   font-size: 20px;
   font-weight: bold;
@@ -565,34 +681,55 @@ margin-top: 10px;
 .faq-all {
   width: 1440px;
   background-color: #fff;
- 
+ margin-top: 31px;
 }
 
 .faq {
   max-width: 1170px;
-  padding: 20px 160px 50px;
+  padding: 20px 160px 8px;
 }
 
 .faq-content {
-  padding: 30px 160px 0 160px;
+  padding: 20px 160px 0 160px;
 
 }
 
+.faq .studio-title-ja {
+  margin-top: 12px;
+}
 
 .faq-close-1, .faq-close-2, .faq-close-3 {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-close-1 {
+  padding-bottom: 10px;
+}
+
+.faq-close-2 {
+  /* margin-top: 8px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.faq-close-3 {
+  margin-top: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .faq-question {
   font-size: 15px;
+  letter-spacing: 1px;
 }
 
 .faq-question-open-1, .faq-question-open-2, .faq-question-open-3 {
   content: "";
   display: inline-block;
   transition: all .4s;
-  cursor: pointer;
+  
   width: 8px; /* ボックスの横幅を指定する */
   height: 8px; /* ボックスの高さを指定する */
   border-top: 3px solid #EB51C2; /* 境界線の上部を実線に指定する*/
@@ -607,16 +744,38 @@ margin-top: 10px;
 
 .faq-question:before {
   content: "Q";
+  font-size: 25px;
+  font-weight: bold;
   display: inline-block;
   width: 25px;
   height: 30px;
   align-items: center;
   background-color: #fff;
   color: #EB51C2;
+  margin-left: 9px;
+  margin-top: 2px;
+  margin-right: 2px;
 }
 
 .faq-answer-1 {
   width: 100%;
+  margin-top: 15px;
+  margin-left: 14px;
+  letter-spacing: 1px;
+}
+
+.faq-answer-2 {
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 14px;
+  letter-spacing: 1px;
+}
+
+.faq-answer-3 {
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 14px;
+  letter-spacing: 1px;
 }
 
 .answer-close-1, .answer-close-2, .answer-close-3 {
@@ -646,6 +805,8 @@ margin-top: 10px;
 
 .faq-answer-1:before, .faq-answer-2:before, .faq-answer-3:before {
   content: "A";
+  font-size: 25px;
+  font-weight: bold;
   display: inline-block;
   width: 25px;
   height: 30px;
@@ -660,14 +821,20 @@ margin-top: 10px;
   width: 100%;
   height: 2px;
   background-color: #d9d9d9;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+}
+
+.faq-cover {
+  /* height: 85px; */
 }
 
 
 .faq-img {
   width: 100%;
   background-color: #EB51C2;
+  margin-top: 140px;
 }
 
 .faq-img-content img{
@@ -682,14 +849,21 @@ margin-top: 10px;
   font-size: 64px;
   color: #fff;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 53px;
   padding-bottom: 30px;
+  /* letter-spacing: 2px; */
 }
 
 .faq-img-come > .btn-common {
+  display: block;
   background-color: #fff;
   color: #EB51C2;
   margin: 0 auto;
+  width: 360px;
+  position: relative;
+  left: 7px;
+  bottom: 8px;
+  
 } 
 
 /* footer */
@@ -698,7 +872,8 @@ margin-top: 10px;
   width: 1440px;
   background-color: black;
   color: #fff;
-  padding: 50px 0;
+  padding: 100px 100px;
+  letter-spacing: 5px;
 }
 
 .footer-title p {
@@ -950,10 +1125,11 @@ html {
     /* width 768pxにしておかないと画面の右に余白ができる */
     width: 768px;
     background-image: url(../img/trainer_bg.png);
-    background-size: cover;
+    /* background-imageの横幅と高さは指定できる */
+    background-size: 100% 100%;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 600px;
+    padding-bottom: 125px;
     margin: 0;
     margin-top: 50px;
   }
@@ -1040,23 +1216,7 @@ html {
     border-top-right-radius: 15px;
   }
   
-  .ourtrainer-img-explain {
-    /* max-width: 768px;
-    margin: -10px auto; */
-  }
-  
-  .trainer-ex {
-    /* max-width: 360px;
-    width: 100%;
-    font-size: 15px;
-    font-weight: 300;
-    background-color: #fff;
-    padding: 20px;
-    padding-bottom: 20px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; */
-  }
-  
+ 
   
   /* Studio */
   
@@ -1148,26 +1308,17 @@ html {
     margin-top: 20px;
   }
   
-  .price-sub-2-2 {
-  }
-  
+
   .price-sub-3 {
     margin-top: 20px;
   }
   
-  .price-sub-3-2 {
-  }
-  
-  .price-food {
-  }
-  
+
   .price-sub-4 {
     margin-top: 20px;
   }
   
-  .price-sub-4-2 {
-  
-  }
+
   
    .price-sub-2, .price-sub-3, .price-sub-4 {
     padding: 30px 10px 10px ;
