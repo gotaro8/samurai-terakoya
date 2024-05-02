@@ -88,7 +88,7 @@ a {
   position: absolute;
   top: 220px;
   z-index: 10;
-
+  padding-left: 12%;
 }
 
 .mainvisual-img {
@@ -99,13 +99,12 @@ a {
 
 
 .mainvisual-title {
+  position: relative;
   max-width: 476px;
   width: 100%;
   font-size: 86px;
-  font-weight: 600;
   line-height: 1;
   background: #fff;
-  display: inline;
   margin-left: 6px;
   letter-spacing: 1px;
   opacity: 0;
@@ -114,6 +113,18 @@ a {
   /* -webit-box-decoration-break: clone;
   box-decoration-break: clone; */
   
+}
+
+.mainvisual-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 0;
+  height: 100%;
+  background-color: #EB51C2;
+  animation: fadeInOutBackground 1s forwards;
 }
 
 .mainvisual-title-2::before {
@@ -153,10 +164,8 @@ a {
   max-width: 476px;
   width: 100%;
   font-size: 86px;
-  font-weight: 600;
   line-height: 1.2;
   background: #fff;
-  display: inline;
   margin-left: 3px;
   padding-top: 10px;
   opacity: 0;
@@ -184,17 +193,13 @@ a {
   color: #EB51C2;
 }
 
-.mainvisual-shop {
+.mainvisual-shop-span {
   max-width: 476px;
-  width: 100%;
-  height: 28px;
-  font-size: 26.5px;
+  font-size: min(3.5vw, 26.5px);
   font-weight: bold;
   background: #fff;
   line-height: 1.5;
   letter-spacing: 1.3px;
-  padding-left: 3.4px;
-  margin-top: 7px;
   /* テキストの後ろにだけ背景を表示する */
   /* -webit-box-decoration-break: clone;
   box-decoration-break: clone; */
@@ -206,8 +211,8 @@ a {
 }
 
 .pc-img {
-  max-width: 1060px;
-  width: 100%;
+  max-width: 100%;
+  width: 70%;
   height: 680px;
   object-fit: cover;
   border-end-start-radius: 90px;
@@ -220,7 +225,6 @@ a {
 }
 
 .btn-common {
-  display: block;
   max-width: 370px;
   width: 100%;
   text-align: center;
@@ -232,6 +236,9 @@ a {
   padding: 30px 10px;
   margin-top: 30px;
   letter-spacing: 2px;
+  display: inline-block;
+  position: relative;
+  right: 23px;
 }
 
 
@@ -277,8 +284,7 @@ a {
 }
 
 #explain img {
-  /* max-width: 950px; */
-  max-width: 100%;
+  max-width: 950px;
 }
 
 
@@ -303,7 +309,7 @@ a {
   position: absolute;
   right: 20px;
   top: 88px;
-  height: 468px;
+  height: auto;
   border-radius: 10px;
   background-color: #fff;
   border: black;
@@ -422,13 +428,6 @@ margin-top: 25px;
   margin-top: 38px;
 }
 
-.btn-common {
-  display: inline-block;
-  position: relative;
-  right: 23px;
-}
-
-
 
 /* ourtrainer */
 
@@ -439,13 +438,13 @@ margin-top: 25px;
   background-repeat: no-repeat;
   height: auto;
   margin-top: 50px;
+  padding: 0 30px;
 }
 
 .ourtrainer {
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
-  /* padding-bottom: 60px; */
 }
 
 .ourtrainer-title-en {
@@ -454,10 +453,7 @@ margin-top: 25px;
   color: #fff;
   font-size: 64px;
   font-weight: bold;
-  padding: 80px 20px 0 0;
-
-  /* padding-top: 80px; */
-  /* margin-left: 5px; */
+  padding: 150px 20px 0 0;
 }
 
 .ourtrainer-title-ja {
@@ -466,7 +462,6 @@ font-size: 20px;
 font-weight: 350;
 margin-top: 10px;
 margin-left: 10px;
-/* padding: 0 160px; */
 }
 
 .ourtrainer-trainer {
@@ -486,31 +481,55 @@ margin-left: 10px;
   margin-bottom: 20px;
 }
 
-.trainer {
+.trainer, .staff {
   max-width: 555px;
   width: 50%;
   cursor: pointer;
+  text-decoration: none;
+  position: relative;
 }
 
-.staff {
-  max-width: 555px;
-  width: 50%;
-  cursor: pointer;
-}
 
-.trainer:hover, .staff:hover {
-  font-weight: bold;
-}
-
-.trainer:hover::after, .staff:hover::after {
-  height: 4px;
+.underline {
+  position: absolute;
+  left: 0;
+  top: 15px;
   content: "";
+  height: 4px;
   display: block;
   width: 100%;
   height: 2px;
   background-color: #fff;
   margin-top: 10px;
 }
+
+.underline-2 {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  content: "";
+  height: 4px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10px;
+  opacity: 0;
+}
+
+.underline.active {
+  opacity: 0;
+}
+
+.underline-2.active {
+  width: 100%;
+  opacity: 1;
+}
+
+.trainer:hover, .staff:hover {
+  font-weight: bold;
+}
+
 
 
 .ourtrainer-img {
@@ -532,8 +551,6 @@ margin-left: 10px;
 
 .ourtrainer-img-staff {
   display: none;
-  /* max-width: 1110px;
-  width: 100%; */
   padding-bottom: 100px;
 }
 
@@ -573,7 +590,6 @@ margin-left: 10px;
 }
 
 .trainer-ex {
-  /* display: block; */
   max-width: 100%;
   width: 100%;
   font-size: 15px;
@@ -595,7 +611,7 @@ margin-left: 10px;
   max-width: 100%;
   width: 100%;
   background-color: #fff;
-  padding: 30px 160px 0 160px;
+  padding: 30px 30px 0 30px;
 }
 
 .studio {
@@ -633,12 +649,11 @@ margin-left: 10px;
 
 .price-all {
   max-width: 100%;
-  /* width: 100%; */
+  width: 100%;
   background-image: url(../img/price_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 885px;
-  /* padding: 20px 160px 150px; */
+  padding: 20px 30px 150px;
   margin-top: 60px;
   margin: 0 auto;
 
@@ -655,12 +670,11 @@ margin-left: 10px;
   display: flex;
   max-width: 1110px;
   width: 100%;
-  margin-right: 0;
-  margin-left: 9px;
-  justify-content: space-between;
   margin: 0 auto;
+  justify-content: space-between;
   margin-top: 30px;
   text-align: center;
+  gap: 20px;
 }
 
 .pricecontent-ul {
@@ -711,7 +725,6 @@ margin-left: 10px;
 .price-price {
   max-width: 184px;
   width: 100%;
-  height: 56px;
   margin: 0 auto;
   font-size: 48px;
   line-height: 150%;
@@ -777,10 +790,6 @@ margin-left: 10px;
   padding-top: 9px;
 }
 
- /* .price-sub-2, .price-sub-3, .price-sub-4 {
-  padding: 30px 10px 12px ;
-} */
-
  .price-price-sub::after, .price-sub-2-2::after, .price-sub-3-2::after {
 
   content: "";
@@ -806,28 +815,60 @@ margin-left: 10px;
   color: #EB51C2;
   background-color: #fff;
   border-radius: 25px;
-  /* padding入れると全体下がってしまう */
   padding: 10px 0 10px;
 }
 
-.scroll-btn {
+.scroll-btn-box {
   display: none;
-  position: relative;
-  top: 25px;
-  left: 10px;
-  display: block;
-  width: 45px;
-  height: 8px;
-  border-radius: 5px;
-  background-color: #fff;
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  right: 5%;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
+
 .scroll-btn {
-  display: none;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.scroll-btn::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 3%;
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  transform: rotate(-135deg);
+}
+
+.scroll-btn::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 3%;
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  transform: rotate(135deg);
 }
 
 .scroll-scroll {
-  display: none;
+  margin-top: 10px;
 }
 
 /* FAQ */
@@ -836,25 +877,25 @@ margin-left: 10px;
   max-width: 100%;
   width: 100%;
   background-color: #fff;
- margin-top: 31px;
+   margin-top: 31px;
 }
 
 .faq {
   max-width: 1170px;
-  padding: 20px 160px 8px;
   margin: 0 auto;
+  padding: 0 30px;
+
 }
 
 .faq-content {
-  max-width: 1440px;
+  max-width: 1110px;
   width: 100%;
-  padding: 20px 160px 0 160px;
   margin: 0 auto;
-
+  margin-top: 30px;
 }
 
 .faq .studio-title-ja {
-  margin-top: 12px;
+  margin-top: 0;
 }
 
 .faq-close-1, .faq-close-2, .faq-close-3 {
@@ -868,7 +909,6 @@ margin-left: 10px;
 }
 
 .faq-close-2 {
-  /* margin-top: 8px; */
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -981,14 +1021,12 @@ margin-left: 10px;
   height: 2px;
   background-color: #d9d9d9;
   margin-left: 10px;
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
 }
 
 .faq-img {
   width: 100%;
   background-color: #EB51C2;
-  margin-top: 140px;
+  margin-top: 60px;
 }
 
 .faq-img-content img{
@@ -1005,7 +1043,6 @@ margin-left: 10px;
   text-align: center;
   padding-top: 53px;
   padding-bottom: 30px;
-  /* letter-spacing: 2px; */
 }
 
 .faq-img-come > .btn-common {
@@ -1048,7 +1085,6 @@ margin-left: 10px;
   bottom: 50px;
   border-radius: 50%;
   z-index: 100;
-  /* １番最後に付けないと機能しない？ */
   background-color: #fff;
 }
 
@@ -1090,7 +1126,6 @@ html {
 
   .header-title {
     padding: 0 20px;
-    height: 60px;
     align-items: center;
   }
 
@@ -1109,7 +1144,6 @@ html {
   
   .mainvisual {
     padding-left: 52px;
-    max-height: 233px;
     position: absolute;
     top: 110px;
   }
@@ -1118,34 +1152,46 @@ html {
     font-size: min(11vw, 90px);
     font-style: italic;
   }
+
+  .mainvisual-title-2 {
+    font-size: min(11vw, 90px);
+    font-style: italic;
+  }
   
   .mainvisual-img {
+    position: relative;
     max-width: 100%;
     width: 100%;
   }
   
-   .sp-img {
+   .pc-img {
     display: block;
-    max-width: 350px;
-    width: 100%;
+    max-width: 100%;
+    width: 70%;
     max-height: 500px;
     margin: 0 0 0 auto;
     object-fit: cover;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 2s;
     text-align: right;
   }
-  
-  .pc-img {
+
+  .sp-img.show {
     display: none;
+  }
+  
+  .pc-img.show {
+    opacity: 1;
   } 
   
   .btn-common {
     max-width: 220px;
     padding: 20px 10px;
+    margin-left: 25px;
     font-size: 13px;
   }
-  
+
+
   
   .mainvisual-catch {
     max-width: 100%;
@@ -1199,8 +1245,7 @@ html {
     width: 100%;
     position: relative;
     top: 0;
-    left: 20px;
-    max-height: 287px;
+    left: 0;
     padding: 40px 30px 30px;
     margin-top: -10px;
   }
@@ -1244,8 +1289,7 @@ html {
     width: 100%;
     position: relative;
     top: 0;
-    left: 20px;
-    max-height: 287px;
+    left: 0;
     padding: 40px 30px 30px;
     margin-top: -10px;
   }
@@ -1273,11 +1317,7 @@ html {
     margin-top: 15px;
   }
   
-  .btn-common {
-    max-width: 380px;
-    right: 0;
-    font-size: 13px;
-  }
+
   
   /* ourtrainer */
 
@@ -1360,9 +1400,13 @@ html {
   /* PRICE */
   
   .price-all {
-    max-width: 100%;
+    max-width: 1024px;
     margin: 50px 0 0 0;
-  
+    padding: 40px 0 150px;
+  }
+
+  .price-all .ourtrainer-title-en {
+    padding-top: 20px;
   }
   
   .price {
@@ -1373,22 +1417,27 @@ html {
   }
   
   .pricecontent {
-    width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    width: 100%;
     position: relative;
     white-space: nowrap;
     margin-top: -25px;
-    padding-top: 25px;
-    padding-right: 20px;
+    padding: 25px 20px 0 30px;
+    margin-left: 0;
     overflow-x: auto;
   }
   
   .pricecontent-ul {
+    display: inline-block;
     position: relative;
+    text-align: center;
     width: 320px;
     background-color: #fff;
     border-radius: 15px;
     padding: 40px 20px 28px;
-    margin-left: 20px;
+    margin-left: 0;
   }
   
   .pricecontent-ul-recommend {
@@ -1397,7 +1446,7 @@ html {
     background-color: #fff;
     border-radius: 15px;
     padding: 0 20px;
-    margin-left: 20px;
+    margin-left: 0;
   }
   
   .price-course {
@@ -1410,13 +1459,19 @@ html {
     width: 100%;
     max-height: 56px;
   }
+
+  .scroll-btn-box {
+    display: inline-block;
+  }
+  
+  .scroll-btn-box.active {
+    display: none;
+  }
   
   
   /* FAQ */
   
-  .faq-all {
-  }
-  
+
   .faq {
     max-width: 100%;
     padding: 0 30px;
@@ -1459,11 +1514,6 @@ html {
     padding-bottom: 20px;
   }
   
-  .faq-img-come > .btn-common {
-    max-width: 300px;
-    
-  } 
-  
   /* footer */
   
   #footer {
@@ -1493,6 +1543,29 @@ html {
 
 @media screen and (max-width:599px) {
 
+  .header-logo {
+    padding-top: 20px;
+  }
+
+  .mainvisual {
+    padding: 50px 0 0 20px;
+  }
+  .sp-img {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+
+  .sp-img.show {
+    opacity: 1;
+  }
+
+  .mainvisual-catch-inner-3 {
+  text-align: left;
+  padding: 0 20px;
+  }
+
+  
+
   /* ourtrainer */
 
   
@@ -1519,7 +1592,7 @@ html {
   }
 
   .ourtrainer-img-staff-open {
-    display: grid;
+    display: none;
   }
 
   .ourtrainer-img-staff {

@@ -13,7 +13,7 @@ $('.studio-img').slick({
 
   $('.staff').click(function() {
     // staffクラスがクリックされたときに、.ourtrainer-img-staffの画像を表示する
-    $('.ourtrainer-img-staff').slideDown(1000);
+    $('.ourtrainer-img-staff, .ourtrainer-img-staff-open').slideDown(1000);
     // 他の画像を非表示にする
     $('.ourtrainer-img').hide();
 });
@@ -54,12 +54,13 @@ $('.trainer').click(function() {
  
 
 $(document).ready(function(){
-$('.pc-img, .mainvisual-title, .mainvisual-title-2').addClass('show');
+$('.pc-img, .mainvisual-title, .mainvisual-title-2, .sp-img').addClass('show');
 });
 
 $(document).ready(function(){
 $('.mainvisual-title').addClass('fade-in');
 });
+
 
 
 $(window).scroll(function(){
@@ -73,23 +74,6 @@ $(window).scroll(function(){
     $('#header').css('background-color', 'transparent');
   }
 });
-
-
-// 　var scrollTimer = null;
-
-// $(window).scroll(function(){
-//   clearTimeout(scrollTimer);
-//   scrollTimer = setTimeout(function(){
-
-//   var scrollPosition = $(window).scrollTop();
-//   if (scrollPosition > 10) {
-//     $('#header').css('background-color', '#ffffff'); // ヘッダーの背景色を白に変更
-//   } else {
-//     $('#header').css('background-color', 'transparent'); // ヘッダーの背景色を透明に変更
-//   }
-//   }, 10); //250ミリ秒の遅延
-//   });
-
 
 
 
@@ -139,6 +123,29 @@ $(window).scroll(function(){
   });
 
 
+
+  $(".pricecontent").on("scroll", function() {
+    var scrollWidth = $(this)[0].scrollWidth; // 要素全体の横幅
+    var scrollLeft = $(this).scrollLeft(); // 横方向のスクロール量
+    var clientWidth = $(this).width(); // 表示領域の横幅
+
+    if (scrollWidth > clientWidth) {
+      $(".scroll-btn-box").fadeOut(); // オーバーフローが発生した場合に非表示にする
+    } else {
+      $(".scroll-btn-box").fadeIn(); // オーバーフローが解消された場合に表示する
+    }
+  });
+
+
+  $('.staff').click(function(){
+    $('.underline').addClass('active');
+    $('.underline-2').addClass('active');
+  });
+
+  $('.trainer').click(function(){
+    $('.underline').removeClass('active');
+    $('.underline-2').removeClass('active');
+  });
 
 });
 
